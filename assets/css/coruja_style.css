@@ -1,0 +1,62 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    background-color: antiquewhite;
+}
+
+@supports(display: flex) and (display: grid) {
+    .header {
+        background-color: red;
+        height: 60px;
+        display: flex;
+        position: fixed;
+        text-align: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper {
+        background-color: paleturquoise;
+        color: #444;
+        display: grid;
+        margin-top: 60px;
+        /* gutter rows (gap) is added to the 100vh at the bottom, so a scroll is created*/
+        /* this calc allows us to correct that */
+        height: calc(100vh - 5vmin - 100px);
+        grid-column-gap: 5vmin;
+        grid-row-gap: 5vmin;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-areas: "content content content" "content content content" "content content content" "content content content" "content content content"; */
+        /*        grid-template-rows: repeat(5, [row] 1fr) [footer] 30px;*/
+    }
+    .product {
+        grid-column: 1/-1;
+        grid-row: 1 / 3;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .descricao {
+        background-color: mintcream;
+        grid-column: 1 / -1;
+        grid-row: 3/-1;
+    }
+    .footer {
+        background-color: #ccc;
+        display: flex;
+        height: 30px;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@supports not (display: flex) and not (display: grid) {
+    body::before {}
+}
