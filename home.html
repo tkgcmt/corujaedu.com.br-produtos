@@ -6,21 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruja Educação - Baixar Avaliação de Demonstração</title>
     <link rel="stylesheet" href="assets/css/coruja_style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>Coruja Educação</h1>
-    </div>
+    <!-- ==== HEADER ==== -->
+    <header>
+        <nav>
+            <a href="#" class="nav-item"><img src="assets/images/logo.png" alt="Coruja Educação - Página Inicial" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="#" id="link1" class="nav-item">link1</a></li>
+                <li><a href="#" id="link2" class="nav-item">link2</a></li>
+                <li><a href="#" id="link3" class="nav-item">link3</a></li>
+                <li><a href="#" id="link4" class="nav-item">link4</a></li>
+            </ul>
+        </nav>
+        <button class="header-btn btn"><i class="fa fa-sign-in"></i></button>
+        <button class="header-btn btn"><i class="fa fa-caret-down"></i></button>
+        <div class="header-line">
+        </div>
+    </header>
+
+    <!-- ==== SIDE NAVBAR ==== -->
+
+
+    <!-- ==== CONTENT ==== -->
+
     <div class="wrapper">
         <img src="assets/images/menina pensando.jpg" alt="Crianças engajadas em uma atividade em sala de aula" class="product" width="320" height="240">
-        <div class="descricao">Descrição</div>
-        <div class="poster"></div>
+        <div class="descricao"> Descrição
+        </div>
+        <div class="poster">
+        </div>
         <div class="call-to-action">
-            <button class="download">Baixar Avaliação Demonstrativa</button>
+
+
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn" class="btn">Open Modal</button>
+            <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 1</button>
+        </div>
+        <div class="descricao"> Descrição
+        </div>
+        <div class="poster">
+        </div>
+        <div class="call-to-action">
+            <button id="download2" class="btn"> Baixar Avaliação Demonstrativa 2</button>
         </div>
     </div>
-    <div class="footer">footer</div>
+
+
+    <!-- ==== HEADER ==== -->
+
+    <div class="footer">
+        <div class="sobre"><a href="sobre.html">Sobre a Coruja</a></div>
+        <div class="contato"><a href="suporte.html">Fale Conosco</a></div>
+        <div class="endereco">
+            <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+            <p>Office 7A</p>
+            <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/js/basic_functions.js"></script>
 </body>
 
 </html>
