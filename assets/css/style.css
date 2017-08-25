@@ -1,50 +1,67 @@
 .body {
-    height:100vh;
-}
-.sidebar {
-    grid-area: sidebar;
-}
-
-.content {
-    grid-area: content;
+    height: 100vh;
 }
 
 .header {
+    height: 60px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: space-around;
+    justify-content: space-around;
+    background-color: #999;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.menu {
+    flex-grow: 8;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-.home {
-    display: grid;
-    grid-gap: 2vmin;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 16vmin 16vmin 16vmin 16vmin 16vmin;
-    grid-template-areas: 
-        "header  header  header" 
-        "sidebar content content"
-        "sidebar content content"
-        "sidebar content content"
-        "sidebar content content";
-    color: #444;
-    background-image: url("/assets/img/menina%20pensando.jpg");
-    background-repeat:no-repeat;
-/*    cobre toda a area visivel*/
-    background-size:cover;
-/*    desenha a imagem pelo topo*/
-    background-position:top;
-/*    cria efeito parallax*/
-/*    background-attachment: fixed;*/
-    
+.logo {
+    order: 0 !important;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+
+.top-navbar {
+    order: 1 !important;
+    flex-grow: 7;
+    flex-basis: 250px;
+}
+
+.login {
+    order: 2 !important;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+
+.scroll-navbar {
+    background-color: teal;
+    display: absolute;
+    right: 2vmin;
+    top: 20%;
+    position: fixed;
+}
+
+.scroll {
+    text-align: center;
+    background-color: aquamarine;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 38px;
+    vertical-align: middle;
 }
 
 .wrapper {
-    display: grid;
+    /*  display: grid;
     grid-gap: 2vmin;
     grid-template-columns: 1fr 1fr 1fr 50px;
-    grid-template-rows: 16vmin 16vmin 16vmin 16vmin 16vmin;
+    grid-template-rows: 16vmin 16vmin 16vmin 16vmin 16vmin; */
 }
 
 .box {
@@ -54,49 +71,31 @@
     font-size: 150%;
 }
 
-.header {
-    background-color: #999;
-}
-
-.overlay {
-    z-index: 10;
-    grid-column: content-start / content-end;
-    grid-row: header-start / content-end;
-    background-color: black;
-    opacity: 0.5;
-}
-.logo {
-    flex-grow: 1;
-    flex-basis: 160px;
-    
-}
-
-.top-navbar {
-    flex-grow:2;
-}
-
-.menu {
+.footer {
+    height: 60px;
+    width: 100vw;
+    background-color: antiquewhite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
-    flex-grow: 2;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
     align-items: center;
-}
-.scroll-navbar {
-    display:  flex;
-    flex-direction: column;
-    z-index: 10;
-    background: #ccc;
-    opacity: 0.5;
-    width: 50px;
-    height: 100vh;
-    margin-left: 95%;
-    position: absolute;
-    background-color: teal;
-    
+    justify-content: space-around;
+    text-align: center;
 }
 
-.scroll {
-    text-align: center;
-    background-color:aquamarine;
+#foot-info1,
+#foot-info2,
+#foot-info3 {
+    flex-grow: 1;
+    background-color: burlywood
+}
+
+#credits {
+    flex-grow 2;
+    flex-basis: 90vw;
+    background-color: cornflowerblue;
 }
