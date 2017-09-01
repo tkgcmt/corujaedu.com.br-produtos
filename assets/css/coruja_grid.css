@@ -1,0 +1,226 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-family: 'Bariol', sans-serif;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+.header {
+    clear: none;
+    grid-area: header;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header-line {
+    height: 2px;
+    background-color: #E24313;
+}
+
+.menu-btn {
+    float: right;
+    margin: 30px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.menu-btn::after {
+    content: " . v";
+}
+
+input[type=checkbox]:checked~div.expanded-menu {
+    display: block;
+    background-color: brown;
+    width: 94.8vw;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.expanded-menu {
+    display: none;
+}
+
+.logo {
+    width: 230px;
+    height: 110px;
+    margin: -17px;
+}
+
+.not-visible {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@supports not (display: grid) {
+    body::before {
+        content: "<< Seu navegador não está atualizado ou não é suportado. Considere utilizar as versões mais atuais do Google Chrome, Safari ou Firefox. >>";
+        background-color: red;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr 1fr);
+        grid-template-areas: "header header" "content content" "footer footer"
+    }
+    .view-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, fr);
+        grid-template-areas: "header header header header" "content content content content" "footer footer footer footer"
+    }
+    .view-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .view-mobile {
+        display: none;
+    }
+    body {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 110px 1fr 300px;
+        grid-template-areas: "header header header header header header header header" "content content content content content content content content" "footer footer footer footer footer footer footer footer"
+    }
+    .view-desktop {
+        display: inline-block;
+        float: right;
+    }
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    -moz-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s -moz-animation-name: animatetop;
+    -webkit-animation-name: animatetop;
+    animation-name: animatetop;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    padding: 0;
+    position: relative;
+    width: 80%;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}

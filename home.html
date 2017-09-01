@@ -5,24 +5,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruja Educação - Baixar Avaliação de Demonstração</title>
-    <link rel="stylesheet" href="assets/css/coruja_style.css">
+    <link rel="stylesheet" href="assets/css/coruja_grid.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="assets/fonts/bariol_regular-webfont.woff">
 </head>
 
 <body>
     <!-- ==== HEADER ==== -->
-    <header>
+    <header class="header">
         <nav>
-            <a href="#" class="nav-item"><img src="assets/images/logo.png" alt="Coruja Educação - Página Inicial" class="logo"></a>
-            <ul class="nav-list">
-                <li><a href="#" id="link1" class="nav-item">link1</a></li>
-                <li><a href="#" id="link2" class="nav-item">link2</a></li>
-                <li><a href="#" id="link3" class="nav-item">link3</a></li>
-                <li><a href="#" id="link4" class="nav-item">link4</a></li>
-            </ul>
+            <a href="#" class="nav-item"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/images/logo.png" width="230px" height: "110px"></a>
+            <label for="menu-header" class="menu-btn view-mobile">MENU</label>
+            <input type="checkbox" id="menu-header" class="not-visible view-mobile">
+            <div class="expanded-menu view-mobile view-tablet">
+                <ul class="nav-list">
+                    <li><a href="#" id="link1" class="nav-item">O Que Fazemos</a></li>
+                    <li><a href="#" id="link2" class="nav-item">Soluções</a></li>
+                    <li><a href="#" id="link3" class="nav-item">Parceiros</a></li>
+                    <li><a href="#" id="link4" class="nav-item">Quem Somos</a></li>
+                </ul>
+                <ul class="horizontal-menu nav-list">
+                    <li><a href="#" id="link5" class="nav-item">Área do Cliente</a></li>
+                    <li><a href="#" id="link6" class="nav-item">Acessar</a></li>
+                    <li><a href="#" id="link7" class="nav-item">Criar Conta</a></li>
+                </ul>
+            </div>
+            <div class="view-desktop">
+                <ul class="nav-list">
+                    <li><a href="#" id="link1" class="nav-item">O Que Fazemos</a></li>
+                    <li><a href="#" id="link2" class="nav-item">Soluções</a></li>
+                    <li><a href="#" id="link3" class="nav-item">Parceiros</a></li>
+                    <li><a href="#" id="link4" class="nav-item">Quem Somos</a></li>
+                    <li><a href="#" id="link5" class="nav-item">Área do Cliente</a></li>
+                    <li><a href="#" id="link6" class="nav-item">Acessar</a></li>
+                    <li><a href="#" id="link7" class="nav-item">Criar Conta</a></li>
+                </ul>
+            </div>
         </nav>
-        <button class="header-btn btn"><i class="fa fa-sign-in"></i></button>
-        <button class="header-btn btn"><i class="fa fa-caret-down"></i></button>
         <div class="header-line">
         </div>
     </header>
@@ -32,15 +52,13 @@
 
     <!-- ==== CONTENT ==== -->
 
-    <div class="wrapper">
-        <img src="assets/images/menina pensando.jpg" alt="Crianças engajadas em uma atividade em sala de aula" class="product" width="320" height="240">
+    <div class="wrapper content">
+        <img src="./assets/images/menina_pensando.jpg" alt="Crianças engajadas em uma atividade em sala de aula" class="product" width="320" height="240">
         <div class="descricao"> Descrição
         </div>
         <div class="poster">
         </div>
         <div class="call-to-action">
-
-
             <!-- Trigger/Open The Modal -->
             <button id="myBtn" class="btn">Open Modal</button>
             <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 1</button>
@@ -52,20 +70,23 @@
         <div class="call-to-action">
             <button id="download2" class="btn"> Baixar Avaliação Demonstrativa 2</button>
         </div>
+
+        <div class="test blog">
+
+        </div>
     </div>
 
 
     <!-- ==== HEADER ==== -->
-
-    <div class="footer">
-        <div class="sobre"><a href="sobre.html">Sobre a Coruja</a></div>
+    <footer class="footer">
+        <div class="sobre"><a class="call-to-action" href="sobre.html">Sobre a Coruja</a></div>
         <div class="contato"><a href="suporte.html">Fale Conosco</a></div>
         <div class="endereco">
             <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
             <p>Office 7A</p>
             <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
         </div>
-    </div>
+    </footer>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
