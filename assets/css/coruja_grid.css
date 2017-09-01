@@ -9,8 +9,18 @@ h2 {
 
 .nav-list {
     list-style: none;
-    padding: 0;
-    display: inline;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    background-color: darkseagreen;
+}
+
+.a-nav {
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
 }
 
 .header {
@@ -41,18 +51,16 @@ h2 {
 }
 
 input[type=checkbox]:checked~div.expanded-menu {
-    display: block;
-    background-color: brown;
-    width: 94.8vw;
-    position: fixed;
-    top: 82px;
-    left: 0;
-    margin: 0;
-    padding: 0;
+    top: 81px;
 }
 
 .expanded-menu {
-    display: none;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    position: fixed;
+    top: -9999px;
 }
 
 .logo {
@@ -83,11 +91,12 @@ input[type=checkbox]:checked~div.expanded-menu {
 }
 
 @media (max-width: 767px) {
-    body {
+    .wrapper {
+        background-color: chartreuse;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(2, 1fr 1fr);
-        grid-template-areas: "header header" "content content" "footer footer"
+        grid-template-areas: "header header" "content content" "footer footer";
     }
     .view-desktop {
         display: none;
@@ -95,11 +104,11 @@ input[type=checkbox]:checked~div.expanded-menu {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    body {
+    .wrapper {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(4, fr);
-        grid-template-areas: "header header header header" "content content content content" "footer footer footer footer"
+        grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
     }
     .view-desktop {
         display: none;
@@ -110,12 +119,12 @@ input[type=checkbox]:checked~div.expanded-menu {
     .view-mobile {
         display: none;
     }
-    body {
+    .wrapper {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 110px 1fr 300px;
-        grid-template-areas: "header header header header header header header header" "content content content content content content content content" "footer footer footer footer footer footer footer footer"
+        grid-template-areas: "header header header header header header header header" "content content content content content content content content" "footer footer footer footer footer footer footer footer";
     }
     .view-desktop {
         display: inline-block;
