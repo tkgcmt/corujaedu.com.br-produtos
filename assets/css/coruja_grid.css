@@ -3,6 +3,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.wrapper {
+    margin-top: -8px;
+}
+
 h2 {
     font-family: 'Bariol', sans-serif;
 }
@@ -24,26 +28,26 @@ h2 {
 }
 
 .header {
-    clear: none;
-    grid-area: header;
+    display: flex;
     position: fixed;
-    width: 100vw;
-    top: 0;
-    left: 0;
     background-color: white;
-    margin: 0;
-    padding: 0;
+    width: calc(100vw - 33px)
 }
 
 .header-line {
+    position: fixed;
+    top: 79px;
+    left: -15px;
     height: 2px;
+    width: 100vw;
     background-color: #E24313;
 }
 
 .menu-btn {
     float: right;
-    margin: 30px 20px 0px 20px;
     cursor: pointer;
+    position: top: 50%;
+    margin-top: -10px;
 }
 
 .menu-btn::after {
@@ -77,10 +81,17 @@ input[type=checkbox]:checked~div.expanded-menu {
 
 .content {
     grid-area: content;
+    background-color: aquamarine;
 }
 
 .footer {
     grid-area: footer;
+    background-color: darkkhaki
+}
+
+.product-img {
+    width: 300px;
+    object-fit: cover;
 }
 
 @supports not (display: grid) {
@@ -90,12 +101,16 @@ input[type=checkbox]:checked~div.expanded-menu {
     }
 }
 
-@media (max-width: 767px) {
+
+/* Mobile */
+
+@media (max-width: 599px) {
     .wrapper {
         background-color: chartreuse;
         display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(2, 1fr 1fr);
+        grid-gap: 10px 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 200px;
         grid-template-areas: "header header" "content content" "footer footer";
     }
     .view-desktop {
@@ -103,17 +118,24 @@ input[type=checkbox]:checked~div.expanded-menu {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+
+/* Tablet */
+
+@media (min-width: 600px) and (max-width: 960px) {
     .wrapper {
         display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(4, fr);
+        grid-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px 1fr 200px;
         grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
     }
     .view-desktop {
         display: none;
     }
 }
+
+
+/* Desktop */
 
 @media (min-width: 1024px) {
     .view-mobile {
@@ -126,10 +148,17 @@ input[type=checkbox]:checked~div.expanded-menu {
         grid-template-rows: 110px 1fr 300px;
         grid-template-areas: "header header header header header header header header" "content content content content content content content content" "footer footer footer footer footer footer footer footer";
     }
+    .header-line {
+        top: 111px;
+    }
     .view-desktop {
         display: inline-block;
         float: right;
     }
+    .nav-list li {
+        display: inline;
+    }
+    .content {}
 }
 
 
