@@ -1,6 +1,8 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 
+var menuBtn = document.getElementById('menu-toggle1');
+
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
@@ -22,4 +24,8 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+menuBtn.onclick = function () {
+
 }

@@ -78,16 +78,17 @@ h2 {
 }
 
 .nav-item {
-    margin: 0;
-    width: 131px;
-    border-radius: 15px;
-    background-color: #E24313;
-    padding: 7px;
+    margin:0;
 }
 
 .a-nav {
     text-decoration: none;
     color: white;
+    margin: 0;
+    padding: 7px;
+    width: 131px;
+    border-radius: 15px;
+    background-color: #E24313;
 }
 
 .away {
@@ -151,6 +152,9 @@ h2 {
     .logged-in {
         display: none;
     }
+    .wrapper {
+        background-color: #BEDBE9;
+    }
 }
 
 
@@ -169,6 +173,9 @@ h2 {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 80px 1fr 200px;
         grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
+    }
+    .wrapper {
+        background-color: #ED6D62;
     }
 }
 
@@ -196,6 +203,9 @@ h2 {
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 110px 1fr 300px;
         grid-template-areas: "header header header header header header header header" "content content content content content content content content" "footer footer footer footer footer footer footer footer";
+    }
+    .wrapper {
+        background-color: #FFFA8D;
     }
 }
 
