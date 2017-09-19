@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #aa4aff;
+}
+
+.toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    /*    background: #333;*/
+}
+
+.toggle span {
+    display: block;
+    width: 60px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: .5s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
+}
+
+.toggle span:nth-child(1) {
+    transform: translate(-50%, -50%) translateY(-20px);
+    transition: .2s;
+}
+
+.toggle span:nth-child(4) {
+    transform: translate(-50%, -50%) translateY(20px);
+    transition: .2s;
+}
+
+.toggle:hover span:nth-child(1) {
+    transform: translate(-50%, -50%) translateY(-35px);
+    opacity: 0;
+}
+
+.toggle:hover span:nth-child(4) {
+    transform: translate(-50%, -50%) translateY(35px);
+    opacity: 0;
+}
+
+.toggle:hover span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.toggle:hover span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

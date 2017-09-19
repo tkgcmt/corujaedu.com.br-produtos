@@ -36,9 +36,9 @@ window.onclick = function (event) {
 /* jQuery */
 
 $(document).ready(function () {
-
     $("#menu-toggle1").click(function () {
-        $(this).toggleClass("clicked");
+        $(this).toggleClass("active");
+        var mobileNav = document.getElementsByClassName("mobile-nav")[0];
+        $(mobileNav).toggleClass("show-mobile-nav");
     });
-
 });
