@@ -10,116 +10,115 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/coruja_grid.css">
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="header">
-            <nav>
-                <div class="navigation">
-                    <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/images/logo.png" width="173px" height: "80px"></a>
-                    <!--
-                    <a href="#">
-                        <h1>Coruja Educação</h1>
-                    </a>    -->
-                    <div class="view-desktop desktop-nav">
-                        <ul class="desktop-nav-list">
-                            <li class="nav-item"><a href="#" id="link1" class="a-nav">O Que Fazemos?</a></li>
-                            <li class="nav-item"><a href="#" id="link2" class="a-nav">Soluções</a></li>
-                            <li class="nav-item"><a href="#" id="link3" class="a-nav">Parceiros</a></li>
-                            <li class="nav-item"><a href="#" id="link4" class="a-nav">Quem Somos</a></li>
-                            <li class="nav-item"><a href="#" id="link5" class="a-nav">Área do Cliente</a></li>
-                            <li class="nav-item disabled"><a href="#" id="link6" class="a-nav">Acessar</a></li>
-                            <li class="nav-item  disabled"><a href="#" id="link7" class="a-nav">Criar Conta</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-toggle view-mobile" id="menu-toggle1">
-                        <span>MENU</span>
-                    </div>
-                    <ul class="logged-in view desktop hidden">
-                        <li>Oooooooooooooooooooooo</li>
-                        <li>opções</li>
-                        <li>sair</li>
+            <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/images/logo.png" width="173px" height: "80px"></a>
+            <h1>Coruja Educação</h1>
+            <div class="view-desktop desktop-nav">
+                <nav>
+                    <ul class="desktop-nav-list">
+                        <li class="nav-item"><a href="#" id="link1" class="a-nav">O Que Fazemos?</a></li>
+                        <li class="nav-item"><a href="#" id="link2" class="a-nav">Soluções</a></li>
+                        <li class="nav-item"><a href="#" id="link3" class="a-nav">Parceiros</a></li>
+                        <li class="nav-item"><a href="#" id="link4" class="a-nav">Quem Somos</a></li>
+                        <li class="nav-item"><a href="#" id="link5" class="a-nav">Área do Cliente</a></li>
+                        <li class="nav-item disabled"><a href="#" id="link6" class="a-nav">Acessar</a></li>
+                        <li class="nav-item  disabled"><a href="#" id="link7" class="a-nav">Criar Conta</a></li>
                     </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="mobile-nav view mobile">
-
-            <ul class="mobile-nav-list">
-                <li class="nav-item"><a href="#" id="link1" class="a-nav">O Que Fazemos?</a></li>
-                <li class="nav-item"><a href="#" id="link2" class="a-nav">Soluções</a></li>
-                <li class="nav-item"><a href="#" id="link3" class="a-nav">Parceiros</a></li>
-                <li class="nav-item"><a href="#" id="link4" class="a-nav">Quem Somos</a></li>
-                <li class="nav-item"><a href="#" id="link5" class="a-nav">Mobile</a></li>
-                <li class="nav-item"><a href="#" id="link5" class="a-nav">Área do Cliente</a></li>
-                <li class="nav-item"><a href="#" id="link6" class="a-nav">Acessar</a></li>
-                <li class="nav-item"><a href="#" id="link7" class="a-nav">Criar Conta</a></li>
-            </ul>
-        </div>
-
-        <div class="content">
-
-            <div class="section-intro">
-                <h2>Coruja Escola</h2>
-                <div class="descricao">
-                    <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                    <!--                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>-->
-                    <button class="call-to-action">Acessar a loja</button>
-                </div>
-
-                <div class="poster">
-                </div>
-
-                <div class="call-to-action">
-                    <button id="myBtn" class="btn">Open Modal</button>
-                    <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 1</button>
-                </div>
+                </nav>
+            </div>
+            <div class="mobile-nav view-mobile">
+                <nav>
+                    <ul class="mobile-nav-list">
+                        <li class="nav-item"><a href="#" id="link1" class="a-nav">O Que Fazemos?</a></li>
+                        <li class="nav-item"><a href="#" id="link2" class="a-nav">Soluções</a></li>
+                        <li class="nav-item"><a href="#" id="link3" class="a-nav">Parceiros</a></li>
+                        <li class="nav-item"><a href="#" id="link4" class="a-nav">Quem Somos</a></li>
+                        <li class="nav-item"><a href="#" id="link5" class="a-nav">Mobile</a></li>
+                        <li class="nav-item"><a href="#" id="link5" class="a-nav">Área do Cliente</a></li>
+                        <li class="nav-item"><a href="#" id="link6" class="a-nav">Acessar</a></li>
+                        <li class="nav-item"><a href="#" id="link7" class="a-nav">Criar Conta</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-toggle view-mobile" id="menu-toggle1">
+                <span class="menu-icon"></span>
             </div>
 
-            <div class="section-gen">
-                <div class="descricao">
-                    <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                    <!--                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>-->
-                    <button class="call-to-action">Acessar a loja</button>
-                </div>
-
-                <div class="poster">
-                </div>
-
-                <div class="call-to-action">
-                    <button id="myBtn" class="btn">Open Modal</button>
-                    <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 2</button>
-                </div>
+            <div class="logged-in">
+                <ul class="user-info-resume">
+                    <li>Oooooooooooooooooooooo</li>
+                    <li>opções</li>
+                    <li>sair</li>
+                </ul>
             </div>
-
-            <div class="section-gen">
-                <div class="descricao">
-                    <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                    <!--                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>-->
-                    <button class="call-to-action">Acessar a loja</button>
-                </div>
-
-                <div class="poster">
-                </div>
-
-                <div class="call-to-action">
-                    <button id="myBtn" class="btn">Open Modal</button>
-                    <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 2</button>
-                </div>
-            </div>
-
         </div>
+    </div>
 
-        <div class="footer">
-            <div class="sobre"><a class="call-to-action" href="sobre.html">Sobre a Coruja</a></div>
-            <div class="contato"><a href="suporte.html">Fale Conosco</a></div>
-            <div class="endereco">
+    <div class="content">
+
+        <div class="section-intro">
+            <h2>Coruja Escola</h2>
+            <div class="descricao">
                 <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                <p>Office 7A</p>
-                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
+                <!--                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>-->
+                <button class="call-to-action">Acessar a loja</button>
             </div>
+
+            <div class="poster">
+            </div>
+
+            <div class="call-to-action">
+                <button id="myBtn1" class="btn">Open Modal</button>
+                <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 1</button>
+            </div>
+        </div>
+
+        <div class="section-gen">
+            <div class="descricao">
+                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+                <!--                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>-->
+                <button class="call-to-action">Acessar a loja</button>
+            </div>
+
+            <div class="poster">
+            </div>
+
+            <div class="call-to-action">
+                <button id="myBtn2" class="btn">Open Modal</button>
+                <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 2</button>
+            </div>
+        </div>
+
+        <div class="section-gen">
+            <div class="descricao">
+                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+                <!--                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>-->
+                <button class="call-to-action">Acessar a loja</button>
+            </div>
+
+            <div class="poster">
+            </div>
+
+            <div class="call-to-action">
+                <button id="myBtn" class="btn">Open Modal</button>
+                <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 2</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="sobre"><a class="call-to-action" href="sobre.html">Sobre a Coruja</a></div>
+        <div class="contato"><a href="suporte.html">Fale Conosco</a></div>
+        <div class="endereco">
+            <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+            <p>Office 7A</p>
+            <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
         </div>
     </div>
 
@@ -138,7 +137,6 @@
             </div>
         </div>
     </div>
-
     <script src="assets/js/basic_functions.js"></script>
 </body>
 

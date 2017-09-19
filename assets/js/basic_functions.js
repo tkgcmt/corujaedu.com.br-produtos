@@ -4,13 +4,20 @@ var modal = document.getElementById('myModal');
 var menuBtn = document.getElementById('menu-toggle1');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function () {
+btn1.onclick = function () {
+    modal.style.display = "block";
+}
+
+// When the user clicks the button, open the modal
+btn2.onclick = function () {
     modal.style.display = "block";
 }
 
@@ -26,6 +33,12 @@ window.onclick = function (event) {
     }
 }
 
-menuBtn.onclick = function () {
+/* jQuery */
 
-}
+$(document).ready(function () {
+
+    $("#menu-toggle1").click(function () {
+        $(this).toggleClass("clicked");
+    });
+
+});

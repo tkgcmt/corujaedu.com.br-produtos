@@ -1,3 +1,7 @@
+h1 {
+    display: none;
+}
+
 body {
     background-color: lightgrey;
     font-family: 'Lato', sans-serif;
@@ -14,7 +18,7 @@ h2 {
     line-height: 42px;
 }
 
-.navigation {
+.header {
     position: fixed;
     width: 100%;
     background-color: white;
@@ -37,12 +41,51 @@ h2 {
 
 .menu-toggle {
     flex: 0 1 0;
-    padding: 10px;
+    padding: 15px 10px;
     background-color: #E24313;
     border-radius: 9px;
     color: white;
     margin: auto 15px;
 }
+
+.menu-toggle:hover {
+    cursor: pointer;
+}
+
+.menu-icon,
+.menu-icon:before,
+.menu-icon:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 24px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-icon:before {
+    top: 10px;
+}
+
+.menu-icon:after {
+    top: -11px;
+}
+
+.menu-toogle:hover span:hover {
+    background: #333 !important;
+}
+
+
+/*
+.menu-toogle.clicked .menu-icon:before {
+    transform: rotate(45deg);
+}
+
+.menu-toogle.clicked .menu-icon:after {
+    transform: rotate(135deg);
+}
+*/
 
 .header-line {
     position: fixed;
@@ -60,10 +103,20 @@ h2 {
     padding: 0 20px;
 }
 
+user-info-resume {
+    list-style: none;
+}
+
+.user-info-resume li {
+    margin: 0;
+    padding: 3px;
+    text-decoration: none;
+}
+
 .mobile-nav {
     background-color: aqua;
     position: fixed;
-    top: 81px;
+    top: -9999px;
     left: 0px;
 }
 
@@ -78,7 +131,7 @@ h2 {
 }
 
 .nav-item {
-    margin:0;
+    margin: 0;
 }
 
 .a-nav {
