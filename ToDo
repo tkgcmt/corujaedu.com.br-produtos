@@ -1,16 +1,16 @@
 NOW:
-refazer grid -> criar grid para cada section
+criar header
+    animar menu mobile de cima pra baixo
+
+
+LATER:
 criar página Escola
     criar section intro Escola
     criar section cadernos
     ...
-
-
-LATER:
-criar soluções
-recriar home
-criar demo online
     
-DONE:
-criar header
-    animar menu mobile de cima pra baixo
+recriar home
+
+criar soluções
+
+criar demo online

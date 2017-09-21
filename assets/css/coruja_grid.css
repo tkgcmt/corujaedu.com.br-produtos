@@ -25,8 +25,6 @@ body {
 }
 
 .header {
-    font-family: 'Bariol', sans-serif;
-    font-size: 16px;
     grid-area: header;
     position: fixed;
     width: 100%;
@@ -38,8 +36,6 @@ body {
     height: 80px;
     margin: 0;
     padding: 0;
-    border-bottom: 2px solid #E24301;
-    z-index: 10;
 }
 
 .logo {
@@ -52,16 +48,15 @@ body {
 
 .menu-toggle {
     display: block;
-    width: 38px;
-    height: 38px;
-    background-color: #E24301;
+    width: 56px;
+    height: 56px;
+    background-color: #E24313;
     border-radius: 9px;
     margin: auto 15px;
     position: absolute;
     top: 50%;
     right: 0px;
     transform: translate(0, -50%);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
 }
 
 .menu-toggle:hover {
@@ -75,18 +70,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 20px;
-    height: 2px;
+    height: 4px;
     background: #fff;
     transition: .5s;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
 }
 
 .menu-toggle span:nth-child(1) {
-    transform: translate(-50%, -50%) translateY(-8px);
+    transform: translate(-50%, -50%) translateY(-10px);
 }
 
 .menu-toggle span:nth-child(4) {
-    transform: translate(-50%, -50%) translateY(8px);
+    transform: translate(-50%, -50%) translateY(10px);
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -109,53 +104,13 @@ body {
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.mobile-nav {
-    font-family: 'Bariol', sans-serif;
-    font-size: 16px;
-    display: block;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    min-height: 228px;
+.header-line {
     position: fixed;
-    top: -300px;
-    left: 0;
-    z-index: 9;
-    transition: .5s;
-    padding: 10px 0;
-}
-
-.glist li {
-    padding: 9px;
-    margin: 0;
-}
-
-.glist a {
-    text-decoration: none;
-    margin: 0;
-    padding: 7px;
-    color: white;
-    border-radius: 9px;
-    background-color: #E24301;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
-}
-
-.mobile-nav-list {
-    display: block;
-}
-
-.mobile-nav-list li {
-    margin: 5px 0 !important;
-    text-align: center;
-}
-
-.mobile-nav-list a {
+    top: 80px;
+    left: 0px;
+    height: 2px;
+    background-color: red;
     width: 100vw;
-    border-radius:
-}
-
-.show-mobile-nav {
-    transform: translate(0, 382px);
 }
 
 .logged-in {
@@ -165,7 +120,7 @@ body {
     padding: 0 20px;
 }
 
-.user-info-resume {
+user-info-resume {
     list-style: none;
 }
 
@@ -173,6 +128,31 @@ body {
     margin: 0;
     padding: 3px;
     text-decoration: none;
+}
+
+.mobile-nav {
+    background-color: aqua;
+    position: fixed;
+    top: -9999px;
+    left: 0px;
+    display: block;
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.mobile-nav-list {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mobile-list li {
+    margin: 10px;
+}
+
+.show-mobile-nav {
+    top: 81px;
 }
 
 .desktop-nav {
@@ -183,6 +163,21 @@ body {
     display: flex;
     text-align: center;
     justify-content: space-around;
+}
+
+.glist li {
+    padding: 5px;
+    margin: 0;
+}
+
+.glist a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 7px;
+    width: 131px;
+    border-radius: 15px;
+    background-color: #E24313;
 }
 
 .away {
@@ -199,25 +194,10 @@ body {
     display: none;
 }
 
-.bg-img {
-    background-image: url("../img/smiling_children.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.intro {
-    width: 400px;
-    height: 230px;
-    background: white;
-    text-align: right;
-    padding: 20px;
-    grid-column: ;
+.poster {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
 }
 
 .content {
@@ -225,7 +205,7 @@ body {
 }
 
 .section-intro {
-    height: 100vh;
+    padding-top: 60px;
 }
 
 .section-gen {
@@ -236,23 +216,7 @@ body {
     grid-area: footer;
 }
 
-.btn-red {
-    padding: 10px 12px;
-    color: white;
-    border-style: none;
-    border-radius: 9px;
-    background-color: #E24301;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
-}
-
-.btn-dark {
-    padding: 10px 12px;
-    color: white;
-    border-style: none;
-    border-radius: 9px;
-    background-color: #5A1A08;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
-}
+.btn {}
 
 @supports not (display: grid) {
     body::before {
@@ -273,22 +237,25 @@ body {
         width: auto;
     }
     .wrapper {
-        background-color: #BEDBE9;
+        background-color: chartreuse;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 10px 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 72px 1fr 200px;
+        grid-template-rows: 80px 1fr 200px;
         grid-template-areas: "header header" "content content" "footer footer";
     }
     .logged-in {
         display: none;
+    }
+    .wrapper {
+        background-color: #BEDBE9;
     }
 }
 
 
 /* Tablet */
 
-@media (min-width: 600px) and (max-width: 1150px) {
+@media (min-width: 600px) and (max-width: 1149px) {
     .desktop-view {
         display: none;
     }
@@ -299,7 +266,7 @@ body {
         display: grid;
         grid-gap: 15px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 67px 1fr 200px;
+        grid-template-rows: 80px 1fr 200px;
         grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
         background-color: #ED6D62;
     }
@@ -316,9 +283,6 @@ body {
         height: 110px;
         justify-content: space-around;
     }
-    .header {
-        height: 110px;
-    }
     .logo {
         max-height: 110px;
         width: auto;
@@ -331,8 +295,7 @@ body {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(8, 1fr);
-        /* first row is, header height - gap for rows */
-        grid-template-rows: 90px 1fr 300px;
+        grid-template-rows: 110px 1fr 300px;
         grid-template-areas: "header header header header header header header header" "content content content content content content content content" "footer footer footer footer footer footer footer footer";
     }
     .menu-toggle {
