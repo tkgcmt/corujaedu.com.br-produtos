@@ -9,7 +9,7 @@
     <link href="assets/fonts/bariol_regular-webfont.woff">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/coruja_grid.css">
+    <link rel="stylesheet" href="assets/css/coruja_style.css">
     <link rel="stylesheet" href="assets/css/modal.css">
     <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
 </head>
@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/images/logo.png" width="173px" height="80px"></a>
+            <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/img/logo.png" width="173px" height="80px"></a>
             <h1>Coruja Educação</h1>
             <div class="desktop-nav desktop-view">
                 <nav>
@@ -67,32 +67,28 @@
         </div>
 
         <div class="content">
-            <div class="section-intro">
-                <h2>Coruja Escola</h2>
-                <div class="poster">
+            <div class="section intro">
+                <div class="background">
+                    <img alt="Crianças alegres em ambiente escolar." src="assets/img/smiling_children.jpg" width="1920" height="1080">
+                    <div class="overlay"></div>
                 </div>
                 <div class="descricao">
-                    <p>
-                        A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.
-                    </p>
-                    <button class="call-to-action" onclick="location.href=testes/exp.html" type="button">Acessar a loja</button>
-                </div>
-
-                <div class="call-to-action">
-                    <button id="download1" class="btn"> Baixar Avaliação Demonstrativa 1</button>
+                    <h2>Coruja Escola</h2>
+                    <h3>
+                        Soluções para os diversos perfis de aprendizagem dentro da sala de aula
+                    </h3>
                 </div>
             </div>
 
-            <div class="section-gen section2">
+            <div class="section gen">
+                <div class="poster"></div>
                 <div class="descricao">
                     <h3>Section 2</h3>
                     <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
-                </div>
-
-                <div class="poster">
+                    <a href="testes/exp.html" class="btn-red">Acessar a loja</a>
                 </div>
             </div>
-
+            <!--
             <div class="section-gen">
                 <h3>Section 3</h3>
                 <div class="poster">
@@ -124,11 +120,15 @@
                 <div class="descricao">
                     <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="footer">
-            <button id="myBtn1" class="btn">#myBtn1 .btn</button>
-            <button id="myBtn2" class="btn">#myBtn2 .btn</button>
+            <p>
+                <button id="myBtn1" class="btn">#myBtn1 .btn</button>
+            </p>
+            <p>
+                <button id="myBtn2" class="btn">#myBtn2 .btn</button>
+            </p>
             <div class="sobre"><a class="call-to-action" href="sobre.html">Sobre a Coruja</a></div>
             <div class="contato"><a href="suporte.html">Fale Conosco</a>
             </div>

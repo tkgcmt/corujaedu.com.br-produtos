@@ -54,4 +54,6 @@ $(document).ready(function () {
             console.log("Clicked outside the div");
         }
     });
+
+
 });

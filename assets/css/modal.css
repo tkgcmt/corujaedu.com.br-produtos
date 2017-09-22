@@ -29,7 +29,8 @@
 .modal-content {
     -moz-animation-duration: 0.4s;
     -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s -moz-animation-name: animatetop;
+    animation-duration: 0.4s;
+    -moz-animation-name: animatetop;
     -webkit-animation-name: animatetop;
     animation-name: animatetop;
     background-color: #fefefe;

@@ -82,6 +82,8 @@ ul a {
 
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80px;
     background-color: #fff;
@@ -226,23 +228,23 @@ ul a {
 
 /* content */
 
+.content {
+    margin-top: 82px;
+}
+
 .poster {
     width: 100px;
     height: 100px;
     background-color: lightgreen;
 }
 
-.section {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(8, 1fr);
-}
+.section {}
 
-.section-intro {
-    padding-top: 60px;
-}
+.intro img {}
 
-.section-gen {
+.intro h2 {}
+
+.gen {
     padding-top: 40px;
 }
 
@@ -314,5 +316,8 @@ ul a {
     }
     .menu-toggle {
         display: none;
+    }
+    .content {
+        margin-top: 110px;
     }
 }
