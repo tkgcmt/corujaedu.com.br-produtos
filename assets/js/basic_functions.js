@@ -14,31 +14,44 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
 btn1.onclick = function () {
     modal.style.display = "block";
-}
+};
 
 // When the user clicks the button, open the modal
 btn2.onclick = function () {
     modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+
+};
 
 /* jQuery */
 
 $(document).ready(function () {
     $("#menu-toggle1").click(function () {
         $(this).toggleClass("active");
-        var mobileNav = document.getElementsByClassName("mobile-nav")[0];
-        $(mobileNav).toggleClass("show-mobile-nav");
+        $(".mobile-nav").toggleClass("show-mobile-nav");
+    });
+
+    $('html').click(function (event) {
+        var clickedOn = $(event.target);
+        /*if (!clickedOn.parents().andSelf().is("#myModal") && $("#myModal").css("display") != "none") {
+            console.log("Clicked outside myModal and");
+            $("#myModal").css("display", "none");
+        }*/
+        if (clickedOn.parents().andSelf().is("#menu-toggle1")) {
+            console.log("Clicked on", clickedOn[0], "inside the div");
+        } else {
+            console.log("Clicked outside the div");
+        }
     });
 });
