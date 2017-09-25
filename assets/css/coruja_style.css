@@ -1,6 +1,5 @@
 /* remember: rules are aplied in a "first come, first served" manner, overwriting past rules */
 
-
 /* tags */
 
 h1 {
@@ -20,7 +19,7 @@ h3 {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: white;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
@@ -42,19 +41,19 @@ p {
 
 /* classes */
 
-
 /* general */
 
 .btn-white {
     background: #fff;
     border: 2px solid #E24301;
-    border-radius: 3px;
+    /*    border-radius: 3px;*/
     padding: 10px;
     color: #E24301;
     transition: 0.3s;
     text-decoration: none;
     text-align: center;
     margin: 20px 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
 }
 
 .btn-white:hover {
@@ -67,12 +66,13 @@ p {
     background: #E24301;
     color: white;
     border: 2px solid #E24301;
-    border-radius: 3px;
+    /*    border-radius: 3px;*/
     padding: 10px;
     transition: 0.3s;
     text-decoration: none;
     text-align: center;
     margin: 20px 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
 }
 
 .btn-red:hover {
@@ -88,7 +88,6 @@ p {
 
 /* /general */
 
-
 /* header */
 
 .header {
@@ -97,7 +96,7 @@ p {
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background-color: white;
     border-bottom: 2px solid #E24301;
     display: flex;
     flex-direction: row;
@@ -136,15 +135,20 @@ p {
     height: 4px;
     background: #fff;
     transition: .5s;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
 }
 
 .menu-toggle span:nth-child(1) {
     transform: translateY(-50%) translateY(-10px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, .20);
 }
 
 .menu-toggle span:nth-child(4) {
     transform: translateY(-50%) translateY(10px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, .20);
+}
+
+.menu-toggle span:nth-child(2) {
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, .20);
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -161,10 +165,12 @@ p {
 
 .menu-toggle.active span:nth-child(2) {
     transform: translateY(-50%) rotate(-135deg);
+    box-shadow: -3px -2px 0px rgba(0, 0, 0, .20);
 }
 
 .menu-toggle.active span:nth-child(3) {
     transform: translateY(-50%) rotate(135deg);
+    box-shadow: 2px -3px 0px rgba(0, 0, 0, .20);
 }
 
 .logged-in {
@@ -233,9 +239,7 @@ p {
 
 /* /desktop navigation */
 
-
 /* /header*/
-
 
 /* content */
 
@@ -261,17 +265,33 @@ p {
     /*    display: block;*/
     width: 100%;
     height: calc(100vh - 82px);
-    background-color: paleturquoise;
 }
 
 .background {
     width: inherit;
     height: inherit;
-    position: absolute;
-    left: 0;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
+    background-image: url("assets/img/smiling_children.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    position: relative;
 }
 
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/*
 .background img {
     width: inherit;
     height: inherit;
@@ -280,25 +300,28 @@ p {
     left: inherit;
     object-fit: cover;
     z-index: inherit;
+    background-color: black;
+    opacity: 0.4;
 }
 
 .overlay {
-    width: inherit;
-    height: inherit;
-    position: inherit;
-    top: inherit;
-    left: inherit;
-    object-fit: cover;
-    background-color: black;
-    opacity: 0.4;
-    z-index: inherit;
-}
+
+width: inherit;
+height: inherit;
+position: inherit;
+top: inherit;
+left: inherit;
+object-fit: cover;
+background-color: transparent;
+opacity: 0.4;
+z-index: inherit;
+} */
 
 .intro .descricao {
     position: absolute;
-    margin: auto;
-    padding: 40px;
-    z-index: 1;
+    margin: 60px auto;
+    padding: 0 40px;
+    z-index: 2;
     color: white;
     text-align: center;
 }
@@ -323,12 +346,10 @@ p {
 
 .gen {
     padding: 40px;
-    background-color: blanchedalmond;
 }
 
 
 /*/ content*/
-
 
 /* compatibility */
 
@@ -341,7 +362,6 @@ p {
 
 
 /* VIEWS ADAPTATIVAS */
-
 
 /* Mobile First */
 
@@ -421,4 +441,5 @@ p {
     position: relative;
     top: 50%;
     line-height: 28px;
+    background-color: darksalmon;
 }

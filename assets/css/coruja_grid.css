@@ -1,6 +1,5 @@
 /* remember: rules are aplied in a "first come, first served" manner, overwriting past rules */
 
-
 /* tags */
 
 h1 {
@@ -36,7 +35,6 @@ ul a {
 
 
 /* classes */
-
 
 /* general */
 
@@ -76,7 +74,6 @@ ul a {
 
 
 /* /general */
-
 
 /* header */
 
@@ -222,9 +219,7 @@ ul a {
 
 /* /desktop navigation */
 
-
 /* /header*/
-
 
 /* content */
 
@@ -251,7 +246,6 @@ ul a {
 
 /*/ content*/
 
-
 /* compatibility */
 
 @supports not (display: grid) {
@@ -263,7 +257,6 @@ ul a {
 
 
 /* VIEWS ADAPTATIVAS */
-
 
 /* Mobile First */
 
