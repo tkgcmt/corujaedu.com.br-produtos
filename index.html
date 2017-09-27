@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapaper">
         <div class="header">
             <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/img/logo.png" width="173px" height="80px"></a>
             <h1>Coruja Educação</h1>
@@ -27,8 +27,8 @@
                         <li><a href="#" class="btn-white">Parceiros</a></li>
                         <li><a href="#" class="btn-white">Quem Somos</a></li>
                         <li><a href="#" class="btn-white">Área do Cliente</a></li>
-                        <li><a href="#" class="btn-white">Acessar</a></li>
-                        <li><a href="#" class="btn-white">Criar Conta</a></li>
+                        <!--<li><a href="#" class="btn-white">Acessar</a></li>
+                        <li><a href="#" class="btn-white">Criar Conta</a></li>-->
                     </ul>
                 </nav>
             </div>
@@ -38,13 +38,17 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="logged-in">
-                <ul class="user-info">
+            <div class="user-info">
+                <ul class="logged-in">
                     <li>Oooooooooooooooooooooo</li>
-                    <li>Opções</li>
-                    <li>Sair</li>
                     <li>Dude, what's goin on?</li>
                     <li>I dunno, do ya?</li>
+                    <li><a href="#">Opções</a></li>
+                    <li><a href="#" id="log-out">Sair</a></li>
+                </ul>
+                <ul class="not-logged-in">
+                    <li><a href="#" id="log-in">Acessar conta</a></li>
+                    <li><a href="#">Cadastrar-se</a></li>
                 </ul>
             </div>
         </div>
@@ -64,12 +68,10 @@
         </div>
 
         <div class="content">
-            <div class="section intro">
+            <div class="intro" id="hero">
                 <div class="background">
-                    <!--
-                    <img alt="Crianças alegres em ambiente escolar." src="assets/img/smiling_children.jpg" width="1920" height="1080">
-                    <div class="overlay"></div>
--->
+                    <!--<img alt="Crianças alegres em ambiente escolar." src="assets/img/smiling_children.jpg" width="1920" height="1080">
+                    <div class="overlay"></div>-->
                 </div>
                 <div class="descricao">
                     <h2>Coruja Escola</h2>
@@ -79,49 +81,41 @@
                 </div>
             </div>
 
-            <div class="section gen">
-                <div class="poster"></div>
-                <div class="descricao">
-                    <h3>Section 2</h3>
+            <div class="section-highlight" id="_oqfzm">
+                <div class="sec-ele descricao">
+                    <h3>O Que Fazemos?</h3>
                     <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
-                    <a href="testes/exp.html" class="btn-red">Acessar a loja</a>
+                    <a href="#" class="btn-red">Acessar a loja</a>
                 </div>
             </div>
-            <!--
-            <div class="section-gen">
-                <h3>Section 3</h3>
-                <div class="poster">
-                </div>
-                <div class="descricao">
-                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
-                </div>
-            </div>
-            <div class="section-gen">
-                <h3>Section 4</h3>
-                <div class="poster">
-                </div>
-                <div class="descricao">
-                    <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
+
+            <div class="section-center" id="_aval">
+                <div class="sec-ele poster"><img src="./assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja"></div>
+                <div class="sec-ele descricao">
+                    <h3>Avaliação Coruja</h3>
+                    <p>É uma avaliação adaptativa realizada em computador (Windows), desenvolvida para mapear o desempenho dos alunos em competências e habilidades relacionadas às áreas de Língua Portuguesa e Matemática. O sistema gera relatórios personalizados para que gestores e professores possam monitorar a evolução da aprendizagem de cada aluno, turma e ano escolar e, assim, determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
+                    <a href="#" class="btn-red">Acesse a Demo</a>
                 </div>
             </div>
-            <div class="section-gen">
-                <h3>Section 5</h3>
-                <div class="poster">
-                </div>
-                <div class="descricao">
+            <div class="section" id="_cad_aluno">
+                <div class="sec-ele poster"><img src="./assets/img/cad_aluno_LP.png" alt=""><img src="./assets/img/cad_aluno_MAT.png" alt=""></div>
+                <div class="sec-ele descricao">
+                    <h3>Caderno do Aluno</h3>
                     <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
+                    <a href="#" class="btn-red">Acessar a loja</a>
                 </div>
             </div>
-            <div class="section-gen">
-                <h3>Section 6</h3>
-                <div class="poster">
-                </div>
-                <div class="descricao">
+            <div class="section" id="_cad_prof">
+                <div class="sec-ele poster"><img src="./assets/img/cad_prof_LP.png" alt=""><img src="./assets/img/cad_prof_MAT.png" alt=""></div>
+                <div class="sec-ele descricao">
+                    <h3>Caderno do Professor</h3>
                     <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
+                    <a href="#" class="btn-red">Acessar a loja</a>
                 </div>
-            </div> -->
+            </div>
         </div>
-        <div class="footer">
+
+        <div class="footer" id="footer">
             <p>
                 <button id="myBtn1" class="btn">#myBtn1 .btn</button>
             </p>
@@ -153,6 +147,7 @@
                 </div>
             </div>
         </div>
+
         <script src="assets/js/basic_functions.js"></script>
         <script src="assets/js/coruja_jQuery.js"></script>
         <!--  JQuery  -->
