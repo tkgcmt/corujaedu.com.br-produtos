@@ -7,64 +7,64 @@
     <title>Coruja Educação - Coruja Escola</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link href="assets/fonts/bariol_regular-webfont.woff">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/coruja_style.css">
     <link rel="stylesheet" href="templates/header/assets/css/header.css">
+    <link rel="stylesheet" href="templates/footer/assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/modal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header id="_header">
-        <!--
-<h2>Coruja Educação</h2>
-<a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/img/logo.png" width="173px" height="80px"></a>
-<nav class="desktop-nav">
-    <h2>Navegação Principal - Desktop</h2>
-    <ul>
-        <li><a href="#" class="btn-white">O Que Fazemos?</a></li>
-        <li><a href="#" class="btn-white">Soluções</a></li>
-        <li><a href="#" class="btn-white">Parceiros</a></li>
-        <li><a href="#" class="btn-white">Quem Somos</a></li>
-        <li><a href="#" class="btn-white">Área do Cliente</a></li>
-    </ul>
-</nav>
-<div class="menu-toggle btn-red" id="_menu-toggle1">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-<div class="user-info">
-    <ul class="not-logged-in">
-        <li><a href="#" id="_log-in">Acessar conta</a></li>
-        <li><a href="#">Cadastrar-se</a></li>
-    </ul>
-    <ul class="logged-in hide">
-        <li>Oooooooooooooooooooooo</li>
-        <li>Dude, what's goin on?</li>
-        <li>I dunno, do ya?</li>
-        <li><a href="#">Opções</a></li>
-        <li><a href="#" id="_log-out">Sair</a></li>
-    </ul>
-</div>
--->
+    <header id="a_header">
+        <!-- load content from templates/header/header.html by jQuery -->
+        <h2>Coruja Educação</h2>
+        <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/img/logo.png" width="173px" height="80px"></a>
+        <nav class="desktop-nav navigation">
+            <h2>Navegação Principal - Desktop</h2>
+            <ul>
+                <li><a href="#">O QUE FAZEMOS?</a></li>
+                <li><a href="#">SOLUÇÕES</a></li>
+                <li><a href="#">PARCEIROS</a></li>
+                <li><a href="#">QUEM SOMOS</a></li>
+                <li><a href="#">ÁREA DO CLIENTE</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle btn-red" id="_menu-toggle1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="user-info">
+            <ul class="not-logged-in">
+                <li><a href="" id="_log-in">Acesse sua conta</a></li>
+                <li>
+                    <p>Não tem conta?</p><a href="#">Cadastre-se</a></li>
+            </ul>
+            <ul class="logged-in hide">
+                <li>Oooooooooooooooooooooo</li>
+                <li>Dude, what's goin on?</li>
+                <li>I dunno, do ya?</li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#" id="_log-out">Sair</a></li>
+            </ul>
+        </div>
     </header>
-    <nav class="mobile-nav">
+    <nav class="mobile-nav navigation">
         <h2>Navegação Principal - Mobile</h2>
         <ul>
-            <li><a href="#" class="btn-red">O Que Fazemos?</a></li>
-            <li><a href="#" class="btn-red">Soluções</a></li>
-            <li><a href="#" class="btn-red">Parceiros</a></li>
-            <li><a href="#" class="btn-red">Quem Somos</a></li>
-            <li><a href="#" class="btn-red">Mobile</a></li>
-            <li><a href="#" class="btn-red">Área do Cliente</a></li>
-            <li><a href="#" class="btn-red">Acessar</a></li>
-            <li><a href="#" class="btn-red">Criar Conta</a></li>
+            <li><a href="#">O QUE FAZEMOS?</a></li>
+            <li><a href="#">SOLUÇÕES</a></li>
+            <li><a href="#">PARCEIROS</a></li>
+            <li><a href="#">QUEM SOMOS</a></li>
+            <li><a href="#">ÁREA DO CLIENTE</a></li>
+            <li><a href="#">Acessar</a></li>
+            <li><a href="#">Criar Conta</a></li>
         </ul>
     </nav>
-
     <main>
         <h1>Coruja Escola</h1>
         <section class="hero" id="_intro">
@@ -179,14 +179,14 @@
     </main>
 
     <footer id="_footer">
-        <!--
+        <!-- load content from templates/footer/footer.html by jQuery -->
+
         <p>
             <button id="_myBtn1" class="btn">#myBtn1 .btn</button>
         </p>
         <p>
             <button id="_myBtn2" class="btn">#myBtn2 .btn</button>
         </p>
--->
         <address>
             <div class="sobre"><a class="call-to-action" href="#">Sobre a Coruja</a></div>
             <div class="contato">Fale Conosco: Telefone / E-mail</div>
@@ -200,10 +200,13 @@
                 <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
             </div>
         </address>
-
     </footer>
 
     <aside>
+        <!--
+        <script type="text/javascript" src="templates/header/assets/js/header.js"></script><script type="text/javascript" src="templates/footer/assets/js/footer.js">
+</script>
+-->
         <script src="assets/js/basic_functions.js"></script>
         <script src="assets/js/coruja_jQuery.js"></script>
     </aside>

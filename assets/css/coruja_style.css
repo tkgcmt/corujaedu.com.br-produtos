@@ -262,19 +262,6 @@ main h1 {
 
 /* /main */
 
-/* footer */
-
-footer {
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    top: 50%;
-    line-height: 28px;
-    background-color: darksalmon;
-}
-
-/* /footer */
-
 /* compatibility */
 
 /*
@@ -290,7 +277,7 @@ footer {
 
 /* Mobile First */
 
-@media (max-width: 530px) {
+@media (max-width: 480px) {
     .desktop-nav {
         display: none;
     }
@@ -301,7 +288,7 @@ footer {
 
 /* Tablet */
 
-@media (min-width: 531px) and (max-width: 1022px) {
+@media (min-width: 481px) and (max-width: 930px) {
     .desktop-nav {
         display: none;
     }
@@ -335,7 +322,7 @@ footer {
 
 /* Desktop */
 
-@media (min-width: 1023px) {
+@media (min-width: 931px) {
     h1 {
         font-size: 60px;
         margin-bottom: 30px;

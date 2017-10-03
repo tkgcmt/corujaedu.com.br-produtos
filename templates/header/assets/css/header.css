@@ -6,16 +6,16 @@ header {
     right: 0;
     width: 100%;
     height: 80px;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    z-index: 10;
     background-color: white;
     border-bottom: 2px solid #E24301;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    font-weight: 900;
-    z-index: 10;
 }
 
 header h2 {
@@ -33,6 +33,69 @@ header img {
     flex-basis: 173px;
     height: 80px;
     width: 173px;
+}
+
+nav {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.navigation {}
+
+
+.navigation {
+    transition: 0.5s;
+}
+
+.navigation ul {
+    display: flex;
+    /*    text-align: center;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation li {
+    text-align: center;
+    margin: 0 10px;
+    /*    background-color: bisque;*/
+}
+
+.navigation a {
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: red;
+    position: relative;
+    /*    padding: 3px 5px;*/
+    /*    background-color: aliceblue;*/
+}
+
+.navigation a::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.navigation a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    box-shadow: 2px 2px .5em #F00;
+    visibility: visible;
 }
 
 .menu-toggle {
@@ -95,9 +158,14 @@ header img {
 .user-info {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 193px;
+    flex-basis: 205px;
     font-size: 13px;
     display: none;
+}
+
+.user-info p {
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .user-info ul {
@@ -152,20 +220,8 @@ header img {
     top: 82px;
 }
 
-nav {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-}
-
-.desktop-nav ul {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-@media (min-width: 1023px) {
-    .mobile-view {
+@media (min-width: 931px) {
+    .mobile-nav {
         display: none;
     }
     header {
