@@ -80,6 +80,67 @@ p {
     background-color: #ccc;
 }
 
+
+
+.navigation h2 {
+    display: none;
+}
+
+
+.navigation {
+    transition: 0.5s;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: red;
+}
+
+.navigation li {
+    text-align: center;
+    margin: 0 10px;
+    /*    background-color: bisque;*/
+}
+
+.navigation a {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: red;
+    position: relative;
+    /*    padding: 3px 5px;*/
+    /*    background-color: aliceblue;*/
+}
+
+.navigation a::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.navigation a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    box-shadow: 2px 2px .5em #F00;
+    visibility: visible;
+}
+
+
 /* /general */
 
 /* main */
@@ -171,9 +232,7 @@ main h1 {
 }
 
 .sec-ele {
-    flex-basis: 383px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1 1 383px;
     /*    height: auto;*/
     margin: 20px;
 }

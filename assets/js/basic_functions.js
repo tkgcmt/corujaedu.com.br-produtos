@@ -1,12 +1,10 @@
 // Get the modal
-var modal = document.getElementById('myModal');
-
-var menuBtn = document.getElementById('menu-toggle1');
+var modal = document.getElementById('_myModal');
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("myBtn1");
+var btn1 = document.getElementById("_myBtn1");
 // Get the button that opens the modal
-var btn2 = document.getElementById("myBtn2");
+var btn2 = document.getElementById("_myBtn2");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
