@@ -190,3 +190,7 @@ nav {
         display: block;
     }
 }
+
+aside {
+    display: none;
+}

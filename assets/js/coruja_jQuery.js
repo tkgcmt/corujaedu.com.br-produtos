@@ -1,10 +1,30 @@
 $(function () {
+    var loadHeader = false;
+    var loadFooter = false;
+
     /* load header */
-    //    $("#_header").load("templates/header/header.html");
+    $("#_header").load("templates/header/header.html", function (response, status, req) {
+        if (status == "error") {
+            var msg = "Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'header': ";
+            $("#error").html(msg + req.status + " " + req.statusText);
+            loadHeader = false;
+        } else {
+            loadHeader = true;
+        }
+    });
 
     /* load footer */
-    //    $("#_footer").load("templates/footer/footer.html");
-
+    $("#_footer").load("templates/footer/footer.html", function (response, status, req) {
+        if (status == "error") {
+            var msg = "Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'footer': ";
+            $("#error").html(msg + req.status + " " + req.statusText);
+            loadFooter = false;
+        } else {
+            loadFooter = true;
+        }
+    });
+    /*console.log("wowowow loading content finished " + "loadHeader: " + loadHeader + " loadFooter: " + loadFooter);
+if (loadFooter && loadHeader) {
     $("#_menu-toggle1").click(function () {
         $(this).toggleClass("active");
         $(".mobile-nav").toggleClass("show-mobile-nav");
@@ -32,4 +52,6 @@ $(function () {
             }
         }
     });
+}*/
+    /* /if */
 });

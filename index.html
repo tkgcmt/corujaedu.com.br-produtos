@@ -5,57 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruja Educação - Coruja Escola</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- fontes -->
     <link href="assets/fonts/bariol_regular-webfont.woff">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- reset.css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- estilos coruja -->
     <link rel="stylesheet" href="assets/css/coruja_style.css">
     <link rel="stylesheet" href="templates/header/assets/css/header.css">
     <link rel="stylesheet" href="templates/footer/assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
+    <!-- font-awesome.css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Animate on Scroll aos.css -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header id="a_header">
+    <header id="_header">
         <!-- load content from templates/header/header.html by jQuery -->
-        <h2>Coruja Educação</h2>
-        <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/img/logo.png" width="173px" height="80px"></a>
-        <nav class="desktop-nav navigation">
-            <h2>Navegação Principal - Desktop</h2>
-            <ul>
-                <li><a href="#">O que fazemos?</a></li>
-                <li><a href="#">Soluções</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Área do Cliente</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle btn-red" id="_menu-toggle1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="user-info">
-            <ul class="not-logged-in">
-                <!--
-                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
-                <li><a href="https://canal.corujaedu.com.br/Conta/Login" id="_log-in">Acesse sua conta</a></li>
--->
-                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
-                <li>
-                    <p>Não tem conta?</p><a href="#">Cadastre-se</a></li>
-            </ul>
-            <ul class="logged-in hide">
-                <li>Oooooooooooooooooooooo</li>
-                <li>Dude, what's goin on?</li>
-                <li>I dunno, do ya?</li>
-                <li><a href="#">Opções</a></li>
-                <li><a href="#" id="_log-out">Sair</a></li>
-            </ul>
-        </div>
     </header>
     <nav class="mobile-nav navigation">
         <h2>Navegação Principal - Mobile</h2>
@@ -184,61 +156,8 @@
 
     <footer id="_footer">
         <!-- load content from templates/footer/footer.html by jQuery -->
-        <!--
-        <nav class="footer-nav navigation">
-            <h2>Navegação Principal - Desktop</h2>
-            <ul>
-                <li><a href="#">O que fazemos?</a></li>
-                <li><a href="#">Soluções</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Área do Cliente</a></li>
-                <li><a href="#">Equipe</a></li>
-            </ul>
-        </nav>
--->
-        <!--
-        <button id="_myBtn1" class="btn">#myBtn1 .btn</button>
-        <button id="_myBtn2" class="btn">#myBtn2 .btn</button>
--->
-        <!--        <div><a href="#">Equipe</a></div>-->
-        <address>
-            <div class="contato">
-               <h3>Dúvidas?</h3>
-<!--            <a href="#">Sobre a Coruja</a>-->
-                <a href="#"><i class="fa fa-link fa-lg"></i>Fale Conosco</a>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Perguntas Frequentes</a>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Equipe</a>
-<!--            <p>Fale Conosco: Telefone / E-mail</p> -->
-           </div>
-            <div class="social-medias">
-               <h3>Siga-nos</h3>
-                <a href="https://www.facebook.com/corujaedu"><i class="fa fa-facebook-official fa-lg"></i> Facebook</a>
-                <a href="https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg"><i class="fa fa-youtube-square fa-lg"></i> Youtube</a>
-                <a href="https://medium.com/coruja-educa%C3%A7%C3%A3o"><i class="fa fa-medium fa-lg"></i> Medium - Blog</a>
-            </div>
-            <div class="endereco">
-                <h3>Endereço</h3>
-                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                <p>Office 7A</p>
-                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
-            </div>
-        </address>
-        <div class="creditos">
-            <h3>créditos</h3>
-            <p>₢flaticon</p>
-            <p>@takagi.massao</p>
-        </div>
     </footer>
-
-    <aside>
-        <!--
-        <script type="text/javascript" src="templates/header/assets/js/header.js"></script><script type="text/javascript" src="templates/footer/assets/js/footer.js">
-</script>
--->
-        <!--        <script src="assets/js/basic_functions.js"></script>-->
-        <script src="assets/js/coruja_jQuery.js"></script>
-    </aside>
+    <script src="assets/js/coruja_jQuery.js"></script>
 </body>
 
 </html>
