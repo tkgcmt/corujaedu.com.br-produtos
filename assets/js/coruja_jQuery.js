@@ -1,26 +1,31 @@
 $(function () {
+    var root = 'http://' + window.location.host;
     var loadHeader = false;
     var loadFooter = false;
-
     /* load header */
-    $("#_header").load("templates/header/header.html", function (response, status, req) {
+    var header = root + "/templates/header/header.html";
+    $("#_header").load(header, function (response, status, req) {
         if (status == "error") {
             var msg = "Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'header': ";
             $("#error").html(msg + req.status + " " + req.statusText);
             loadHeader = false;
+            console.log("Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'header': " + req.status + " " + req.statusText + "\n" + header);
         } else {
             loadHeader = true;
+            console.log("Conteúdo de 'header' carregado com sucesso!");
         }
     });
 
     /* load footer */
-    $("#_footer").load("templates/footer/footer.html", function (response, status, req) {
+    $("#_footer").load(root + "/templates/footer/footer.html", function (response, status, req) {
         if (status == "error") {
             var msg = "Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'footer': ";
             $("#error").html(msg + req.status + " " + req.statusText);
             loadFooter = false;
+            console.log("Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'footer': " + req.status + " " + req.statusText);
         } else {
             loadFooter = true;
+            console.log("Conteúdo de 'header' carregado com sucesso!");
         }
     });
     /*console.log("wowowow loading content finished " + "loadHeader: " + loadHeader + " loadFooter: " + loadFooter);

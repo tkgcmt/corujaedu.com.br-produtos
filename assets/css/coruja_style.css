@@ -66,7 +66,7 @@ p {
     transition: 0.3s;
     text-decoration: none;
     text-align: center;
-    margin: 20px 0;
+    /*    margin: 20px 0;*/
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .20);
 }
 
@@ -190,7 +190,7 @@ main h1 {
     width: inherit;
     height: inherit;
     position: relative;
-    /*    background-image: url("../img/smiling_children.jpg");*/
+    /*    background-image: url("/assets/img/smiling_children.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -332,7 +332,7 @@ main h1 {
 }
 */
 
-/* VIEWS ADAPTATIVAS */
+/* Adaptative VIEWS */
 
 /* Mobile First */
 

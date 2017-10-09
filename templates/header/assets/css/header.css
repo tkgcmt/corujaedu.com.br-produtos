@@ -44,10 +44,23 @@ nav {
     align-items: center;
 }
 
+.nav-menu-toggle {
+    margin-right: 20px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-toggle > span {
+    margin-right: 20px;
+    color: #333;
+    font-weight: 200;
+}
+
 .menu-toggle {
-    margin: 0 20px 0 0;
     width: 20px;
     height: 20px;
+    position: relative;
 }
 
 .menu-toggle:hover span {
@@ -144,7 +157,6 @@ nav {
     top: -392px;
     left: 0px;
     width: 100%;
-    height: 392px;
     transition: 0.5s;
     z-index: 9;
 }
@@ -183,7 +195,7 @@ nav {
     .wrapper {
         background-color: #FFFA8D;
     }
-    .menu-toggle {
+    .nav-menu-toggle {
         display: none;
     }
     .user-info {
