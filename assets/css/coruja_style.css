@@ -237,42 +237,32 @@ main h1 {
     margin: 20px;
 }
 
-.highlight {
-    text-align: center !important;
-    padding: 30px 10px 40px;
+.center {
+    display: block;
+    text-align: center;
 }
 
-.highlight {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-}
-
-.highlight .descr,
 .center .descr {
     margin: 0 auto;
+    padding: 30px 0 40px;
 }
 
-.highlight h2::after,
 .center h2::after {
     content: "";
     display: block;
     margin: 15px auto;
     height: 2px;
     width: 120px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.center h2::after {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.center {
-    display: block;
+.black-bg h2::after {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.center .descr {
-    text-align: center;
-    margin: 30px auto 40px;
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 .side-by-side {
@@ -362,7 +352,7 @@ main h1 {
         font-size: 32px;
         margin-bottom: 16px;
     }
-    .highlight h3::after {
+    .center h3::after {
         margin: 20px auto;
     }
     .poster {
@@ -375,7 +365,11 @@ main h1 {
         margin: 30px;
     }
     .center .descr {
-        margin: 50px auto 60px;
+        padding: 40px 0 60px;
+    }
+
+    #profSandra {
+        object-position: center center;
     }
 }
 
@@ -407,7 +401,7 @@ main h1 {
         width: 926px;
     }
 
-    .highlight h3::after {
+    .center h3::after {
         margin: 30px auto;
     }
 
@@ -449,10 +443,23 @@ main h1 {
     }
 
     .center .descr {
-        margin: 70px auto 80px;
+        padding: 50px 0 80px;
+    }
+
+    #profSandra {
+        object-position: center right;
     }
 }
 
 .hide {
     display: none;
+}
+
+#profSandra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
