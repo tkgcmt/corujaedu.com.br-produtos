@@ -1,0 +1,44 @@
+/*#profSandra {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: auto;
+    transform: translate(10%, -50%);
+}*/
+
+#test_ {
+    animation-name: fadeIn;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+#_demo .hero .descr {
+    transform: translate(0, 0);
+    width: 40%;
+    max-width: 40%;
+    top: auto;
+    bottom: 10vh;
+    left: auto;
+    right: 0;
+    margin-right: 40px;
+}
+
+#_demo .hero p,
+#_demo .hero h1 {
+    color: #333;
+    margin: 0;
+    text-align: right;
+}
+
+#_demo .hero h1 {
+    margin: 20px 0;
+}
+
+@media (max-width: 930px) {
+    #_demo .hero img {
+        object-position: bottom right;
+    }
+}

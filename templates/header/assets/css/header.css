@@ -28,6 +28,12 @@ header img {
     flex-basis: 173px;
     height: 80px;
     width: 173px;
+    transition: .4s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+    transition: .4s;
 }
 
 nav {

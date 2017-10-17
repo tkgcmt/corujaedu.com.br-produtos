@@ -6,28 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruja Educação - Coruja Escola</title>
     <!-- fontes -->
-    <link href="/assets/fonts/bariol_regular-webfont.woff">
+    <link href="../../assets/fonts/bariol_regular-webfont.woff">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
     <!-- reset.css -->
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <!-- estilos coruja -->
-    <link rel="stylesheet" href="/assets/css/coruja_style.css">
-    <link rel="stylesheet" href="/templates/header/assets/css/header.css">
-    <link rel="stylesheet" href="/templates/footer/assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
     <!-- font-awesome.css -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
     <!-- animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Animate on Scroll aos.css -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- estilos coruja -->
+    <link rel="stylesheet" href="../../assets/css/coruja_style.css">
+    <link rel="stylesheet" href="../../templates/header/assets/css/header.css">
+    <link rel="stylesheet" href="../../templates/footer/assets/css/footer.css">
+    <link rel="stylesheet" href="../../pages/DemoEscola/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header id="_header">
+    <header id="a_header">
         <!-- load content from templates/header/header.html by jQuery -->
+        <h2>Coruja Educação</h2>
+        <a href="#" class="logo"><img class="logo animated fadeInDown" alt="Coruja Educação - Página Inicial" src="../../assets/img/logo.png" width="173px" height="80px"></a>
+        <nav class="desktop-nav navigation animated fadeInDown">
+            <h2>Navegação Principal - Desktop</h2>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Soluções</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Área do Cliente</a></li>
+            </ul>
+        </nav>
+        <div class="nav-menu-toggle animated fadeInDown">
+            <span>MENU</span>
+            <div class="menu-toggle btn-red" id="_menu-toggle1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="user-info animated fadeInDown">
+            <ul class="not-logged-in">
+                <!--
+                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
+                <li><a href="https://canal.corujaedu.com.br/Conta/Login" id="_log-in">Acesse sua conta</a></li>
+        -->
+                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
+                <li>
+                    <p>Não tem conta?</p><a href="#">Cadastre-se</a></li>
+            </ul>
+            <ul class="logged-in hide">
+                <li>Oooooooooooooooooooooo</li>
+                <li>Dude, what's goin on?</li>
+                <li>I dunno, do ya?</li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#" id="_log-out">Sair</a></li>
+            </ul>
+        </div>
     </header>
     <nav class="mobile-nav navigation">
         <h2>Navegação Principal - Mobile</h2>
@@ -42,49 +82,50 @@
         </ul>
     </nav>
     <main id="_demo">
-        <h1>Avaliação Coruja</h1>
-        <section class="hero light" id="_intro_Demo">
+        <section class="hero">
             <div class="background">
-                <img alt="Crianças alegres em ambiente escolar." src="/assets/img/0001.png" width="800" height="600" id="profSandra">
+                <img alt="Crianças alegres em ambiente escolar." src="../../assets/img/001.jpg" width="800" height="600">
             </div>
-            <div class="descr">
-                <h2>
+            <div class="descr animated fadeIn" id="test_">
+                <h1 class="sec-ele animated fadeIn">Avaliação Coruja</h1>
+                <p>
                     É a avaliação adaptativa que inicia os programas Coruja Escola e Coruja Especialista.
-                </h2>
+                </p>
             </div>
+            <div class="clear"></div>
         </section>
+
         <section class="center black-bg" id="_oqfzm">
-            <div class="sec-ele descr">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Como funciona?</h2>
                 <p>A linha Coruja Escola oferece produtos que lidam com o monitoramento e intervenção pedagógica, avaliação digital personalizada e mais. Juntos, formam um programa completo adaptado à diversidade dos alunos da sala de aula. É comercializada pela Pearson Clinical.</p>
                 <a href="#" class="btn-red">Acessar a loja</a>
             </div>
         </section>
-
-        <section class="center" id="_aval">
-            <div class="poster">
-                <img src="/assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
+        <section id="_aval" class="center">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="poster">
+                <img src="../../assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
             </div>
-            <div class="sec-ele descr">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Avaliação Coruja</h2>
                 <p>É uma avaliação adaptativa realizada em computador (Windows), desenvolvida para mapear o desempenho dos alunos em competências e habilidades relacionadas às áreas de Língua Portuguesa e Matemática. O sistema gera relatórios personalizados para que gestores e professores possam monitorar a evolução da aprendizagem de cada aluno, turma e ano escolar e, assim, determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
                 <a href="#" class="btn-red">Acesse a Demo</a>
             </div>
         </section>
         <section class="side-by-side" id="_cad_aluno">
-            <div class="sec-ele showcase">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/LP_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.">
+                    <img src="../../assets/img/LP_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.">
                     <figcaption>Fig. 1 - Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
-            <div class="sec-ele showcase">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano..">
+                    <img src="../../assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano..">
                     <figcaption>Fig. 2 - Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
-            <div class="sec-ele descr">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Cadernos do Aluno</h2>
                 <p>Os cadernos são aliados dos gestores e professores para um ensino mais eficiente e estão alinhado às especificidades dos diversos alunos na sala de aula. São atividades organizadas em diferentes eixos, fundamentais para a aprendizagem dos conteúdos acadêmicos da Língua Portuguesa e da Matemática durante o ciclo de alfabetização. O conteúdo do caderno está organizado de forma interdisciplinar e personalizada, com diferentes níveis de complexidade.</p>
                 <h2>Baixe uma amostra gratuita dos cadernos:</h2>
@@ -115,19 +156,19 @@
             </div>
         </section>
         <section class="side-by-side" id="_cad_prof">
-            <div class="sec-ele showcase">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele showcase">
                 <figure>
                     <img src="/assets/img/LP_PROF_ANO_1_SEM_2_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.">
                     <figcaption>Fig. 3 - Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
-            <div class="sec-ele showcase">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/MAT_PROF_ANO_1_SEM_2_web.png" alt="Menina no ensino fundamental fazendo a Avaliação Coruja">
+                    <img src="../../assets/img/MAT_PROF_ANO_1_SEM_2_web.png" alt="Menina no ensino fundamental fazendo a Avaliação Coruja">
                     <figcaption>Fig. 4 - Capa do caderno do aluno de Matemática, segundo semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
-            <div class="sec-ele descr">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Cadernos do Professor</h2>
                 <p>Os cadernos do professor permitem o acompanhamento das atividades contidas nos cadernos dos alunos. Apresenta a proposta da diferenciação da instrução, além de contar com comentários e orientações para melhorar a intervenção pedagógica dentro dessa proposta.</p>
                 <h2>Baixe uma amostra gratuita dos cadernos:</h2>
@@ -158,17 +199,45 @@
             </div>
         </section>
         <section class="center black-bg" id="_buy">
-            <div class="sec-ele descr">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Adquira já o Coruja Escola</h2>
                 <a href="#" class="btn-red">Acessar a loja</a>
             </div>
         </section>
     </main>
-
-    <footer id="_footer">
+    <footer id="a_footer">
         <!-- load content from templates/footer/footer.html by jQuery -->
+        <address>
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="contato">
+                <h3>Dúvidas?</h3>
+                <!--            <a href="#">Sobre a Coruja</a>-->
+                <a href="#"><i class="fa fa-link fa-lg"></i>Fale Conosco</a>
+                <a href="#"><i class="fa fa-link fa-lg"></i>Perguntas Frequentes</a>
+                <a href="#"><i class="fa fa-link fa-lg"></i>Equipe</a>
+            </div>
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="social-medias">
+                <h3>Siga-nos</h3>
+                <a href="https://www.facebook.com/corujaedu"><i class="fa fa-facebook-official fa-lg"></i> Facebook</a>
+                <a href="https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg"><i class="fa fa-youtube-square fa-lg"></i> Youtube</a>
+                <a href="https://medium.com/coruja-educa%C3%A7%C3%A3o"><i class="fa fa-medium fa-lg"></i> Medium - Blog</a>
+            </div>
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="endereco">
+                <h3>Endereço</h3>
+                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+                <p>Office 7A</p>
+                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
+            </div>
+        </address>
+        <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="creditos">
+            <h3>créditos</h3>
+            <p>₢flaticon</p>
+            <p>@takagi.massao</p>
+        </div>
     </footer>
-    <script src="/assets/js/coruja_jQuery.js"></script>
+    <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
+    <!-- animate on scroll AOS-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="../../assets/js/coruja_jQuery.js"></script>
 </body>
 
 </html>
