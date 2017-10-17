@@ -1,3 +1,5 @@
+AOS.init();
+
 $(function () {
     var root = 'http://' + window.location.host;
     var loadHeader = false;

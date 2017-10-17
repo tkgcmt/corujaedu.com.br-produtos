@@ -32,7 +32,7 @@ ul a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     -webkit-hyphens: auto;
     hyphens: auto;
@@ -117,11 +117,13 @@ p {
 .navigation a::after {
     content: "";
     display: inline-block;
-    width: 100%;
+    width: 20%;
     height: 2px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
     visibility: hidden;
 }
 
@@ -132,12 +134,11 @@ p {
     height: 2px;
     background-color: black;
     position: absolute;
-    top: calc(100% + 5px);
-    left: 50%;
-    transform: translateX(-50%);
     opacity: 0.3;
+    transition: .4s;
     box-shadow: 2px 2px .5em #F00;
     visibility: visible;
+
 }
 
 
@@ -155,35 +156,36 @@ main {
     justify-content: space-around;
     max-width: 75%;
     padding: 0 20px;
+    /*    animation-delay: 1s;*/
 }
 
 .descr .btn-red {
     margin: 20px auto;
 }
 
-main h1,
-.hero h2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.hero h1,
+.hero p {
+    text-align: center;
     color: white;
     min-width: 220px;
+    z-index: 1;
 }
 
-main h1 {
-    text-align: center;
-    top: 20vh;
+.hero h1 {
+    top: 5vh;
 }
 
-.hero h2 {
-    top: 250px;
-    top: 15vh;
+.hero p {
+    font-family: 'Bariol', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 .hero {
     display: block;
     width: 100%;
     height: calc(100vh - 82px);
+    background-color: antiquewhite;
 }
 
 .background {
@@ -194,7 +196,7 @@ main h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: -1;
+    z-index: 0;
 }
 
 .background img {
@@ -202,33 +204,31 @@ main h1 {
     width: inherit;
     height: inherit;
     object-fit: cover;
-    z-index: -1;
 }
 
 .overlay {
-    width: inherit;
-    height: inherit;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover;
+    z-index: 2;
+    width: inherit;
+    height: inherit;
     background-color: black;
     opacity: 0.4;
-    z-index: 2;
+    object-fit: cover;
 }
 
-.hero .descr,
-.hero .bla {
-    display: block;
+.hero .descr {
     position: absolute;
     top: 82px;
     left: 50%;
-    margin-top: 5%;
-    transform: translateX(-50%);
     z-index: 2;
+    display: block;
+    margin-top: 5%;
+    min-width: 201px;
     color: white;
     text-align: center;
-    min-width: 201px;
+    transform: translateX(-50%);
 }
 
 .sec-ele {
@@ -352,6 +352,9 @@ main h1 {
         font-size: 32px;
         margin-bottom: 16px;
     }
+    p {
+        font-size: 14px;
+    }
     .center h3::after {
         margin: 20px auto;
     }
@@ -453,13 +456,4 @@ main h1 {
 
 .hide {
     display: none;
-}
-
-#profSandra {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40%;
-    height: auto;
-    transform: translate(-50%, -50%);
 }

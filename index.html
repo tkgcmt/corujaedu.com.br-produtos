@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruja Educação - Coruja Escola</title>
     <!-- fontes -->
-    <link href="/assets/fonts/bariol_regular-webfont.woff">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="assets/fonts/bariol_regular-webfont.woff">
     <!-- reset.css -->
-    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!-- estilos coruja -->
-    <link rel="stylesheet" href="/assets/css/coruja_style.css">
-    <link rel="stylesheet" href="/templates/header/assets/css/header.css">
-    <link rel="stylesheet" href="/templates/footer/assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/coruja_style.css">
+    <link rel="stylesheet" href="templates/header/assets/css/header.css">
+    <link rel="stylesheet" href="templates/footer/assets/css/footer.css">
     <!-- font-awesome.css -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <!-- animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Animate on Scroll aos.css -->
@@ -28,6 +28,48 @@
 <body>
     <header id="_header">
         <!-- load content from templates/header/header.html by jQuery -->
+        <h2>Coruja Educação</h2>
+        <a href="#" class="logo"><img class="logo" alt="Coruja Educação - Página Inicial" src="assets/img/logo.png" width="173px" height="80px"></a>
+        <nav class="desktop-nav navigation">
+            <h2>Navegação Principal - Desktop</h2>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Soluções</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Área do Cliente</a></li>
+            </ul>
+        </nav>
+        <div class="nav-menu-toggle">
+            <span>MENU</span>
+            <div class="menu-toggle btn-red" id="_menu-toggle1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="user-info">
+            <ul class="not-logged-in">
+                <!--
+                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
+                <li><a href="https://canal.corujaedu.com.br/Conta/Login" id="_log-in">Acesse sua conta</a></li>
+        -->
+                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
+                <li>
+                    <p>Não tem conta?</p><a href="#">Cadastre-se</a></li>
+            </ul>
+            <ul class="logged-in hide">
+                <li>Oooooooooooooooooooooo</li>
+                <li>Dude, what's goin on?</li>
+                <li>I dunno, do ya?</li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#" id="_log-out">Sair</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="/templates/header/assets/js/header.js"></script>
+        <!-- animate on scroll AOS-->
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     </header>
     <nav class="mobile-nav navigation">
         <h2>Navegação Principal - Mobile</h2>
@@ -42,16 +84,16 @@
         </ul>
     </nav>
     <main>
-        <h1>Coruja Escola</h1>
         <section class="hero" id="_intro">
             <div class="background">
-                <img alt="Crianças alegres em ambiente escolar." src="/assets/img/smiling_children.jpg" width="1920" height="1080">
+                <img alt="Crianças alegres em ambiente escolar." src="assets/img/smiling_children.jpg" width="1920" height="1080">
                 <div class="overlay"></div>
             </div>
             <div class="descr">
-                <h2>
+                <h1>Coruja Escola</h1>
+                <p>
                     Soluções para os diversos perfis de aprendizagem dentro da sala de aula.
-                </h2>
+                </p>
             </div>
         </section>
         <section class="center black-bg" id="_oqfzm">
@@ -64,7 +106,7 @@
 
         <section class="center" id="_aval">
             <div class="poster">
-                <img src="/assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
+                <img src="assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
             </div>
             <div class="sec-ele descr">
                 <h2>Avaliação Coruja</h2>
@@ -75,13 +117,13 @@
         <section class="side-by-side" id="_cad_aluno">
             <div class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/LP_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.">
+                    <img src="assets/img/LP_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.">
                     <figcaption>Fig. 1 - Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
             <div class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano..">
+                    <img src="assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano..">
                     <figcaption>Fig. 2 - Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
@@ -118,13 +160,13 @@
         <section class="side-by-side" id="_cad_prof">
             <div class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/LP_PROF_ANO_1_SEM_2_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.">
+                    <img src="assets/img/LP_PROF_ANO_1_SEM_2_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.">
                     <figcaption>Fig. 3 - Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
             <div class="sec-ele showcase">
                 <figure>
-                    <img src="/assets/img/MAT_PROF_ANO_1_SEM_2_web.png" alt="Menina no ensino fundamental fazendo a Avaliação Coruja">
+                    <img src="assets/img/MAT_PROF_ANO_1_SEM_2_web.png" alt="Menina no ensino fundamental fazendo a Avaliação Coruja">
                     <figcaption>Fig. 4 - Capa do caderno do aluno de Matemática, segundo semestre do primeiro ano.</figcaption>
                 </figure>
             </div>
@@ -168,8 +210,34 @@
 
     <footer id="_footer">
         <!-- load content from templates/footer/footer.html by jQuery -->
+        <address>
+            <div class="contato">
+                <h3>Dúvidas?</h3>
+                <!--            <a href="#">Sobre a Coruja</a>-->
+                <a href="#"><i class="fa fa-link fa-lg"></i>Fale Conosco</a>
+                <a href="#"><i class="fa fa-link fa-lg"></i>Perguntas Frequentes</a>
+                <a href="#"><i class="fa fa-link fa-lg"></i>Equipe</a>
+            </div>
+            <div class="social-medias">
+                <h3>Siga-nos</h3>
+                <a href="https://www.facebook.com/corujaedu"><i class="fa fa-facebook-official fa-lg"></i> Facebook</a>
+                <a href="https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg"><i class="fa fa-youtube-square fa-lg"></i> Youtube</a>
+                <a href="https://medium.com/coruja-educa%C3%A7%C3%A3o"><i class="fa fa-medium fa-lg"></i> Medium - Blog</a>
+            </div>
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+                <p>Office 7A</p>
+                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
+            </div>
+        </address>
+        <div class="creditos">
+            <h3>créditos</h3>
+            <p>₢flaticon</p>
+            <p>@takagi.massao</p>
+        </div>
     </footer>
-    <script src="/assets/js/coruja_jQuery.js"></script>
+    <script src="assets/js/coruja_jQuery.js"></script>
 </body>
 
 </html>
