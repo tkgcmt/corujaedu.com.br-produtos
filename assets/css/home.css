@@ -1,0 +1,57 @@
+#_home .background {
+    background: #333 url(/assets/img/menina_pensando.jpg) no-repeat left center;
+    /*    background-color: #333;*/
+    background-size: cover;
+    background-clip: content-box;
+}
+
+#_home .background::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+#_home .hero h1,
+#_home .hero p {
+    text-align: left;
+}
+
+/*mobile*/
+
+@media (max-width: 480px) {
+    #_home .background {
+        background: #333 url(/assets/img/menina_pensando.jpg) no-repeat left center;
+        /*    background-color: #333;*/
+        background-size: auto;
+        background-clip: content-box;
+    }
+    #_home .descr {
+        transform: translate(0, 0);
+        left: 0;
+    }
+}
+
+/*tablet*/
+
+@media (min-width: 481px) and (max-width: 930px) {
+    #_home .descr {
+        transform: translate(0, 0);
+        left: 8vw;
+        max-width: 50%;
+    }
+}
+
+/*desktop*/
+
+@media (min-width: 931px) {
+    #_home .descr {
+        transform: translate(0, 0);
+        left: 10vw;
+        max-width: 50%;
+    }
+}

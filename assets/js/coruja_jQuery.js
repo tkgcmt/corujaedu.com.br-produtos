@@ -1,11 +1,13 @@
-AOS.init();
-
 $(function () {
+    AOS.init();
     var root = 'http://' + window.location.host;
     var loadHeader = false;
     var loadFooter = false;
+
+    console.log("\n\nWINDOW.LOCATION.HOST = " + window.location.host + "\n\n");
     /* load header */
-    var header = root + "/templates/header/header.html";
+    //    var header = root + "/templates/header/header.html";
+    var header = "/templates/header/header.html";
     $("#_header").load(header, function (response, status, req) {
         if (status == "error") {
             var msg = "Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'header': ";
@@ -19,46 +21,17 @@ $(function () {
     });
 
     /* load footer */
-    $("#_footer").load(root + "/templates/footer/footer.html", function (response, status, req) {
+    //    var footer = root + "/templates/footer/footer.html";
+    var footer = "/templates/footer/footer.html";
+    $("#_footer").load(footer, function (response, status, req) {
         if (status == "error") {
             var msg = "Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'footer': ";
             $("#error").html(msg + req.status + " " + req.statusText);
             loadFooter = false;
-            console.log("Desculpe-nos, encontramos um erro ao carregar o conteúdo de 'footer': " + req.status + " " + req.statusText);
+            console.log("aDesculpe-nos, encontramos um erro ao carregar o conteúdo de 'footer': " + req.status + " " + req.statusText + "\n" + footer);
         } else {
             loadFooter = true;
-            console.log("Conteúdo de 'header' carregado com sucesso!");
+            console.log("Conteúdo de 'footer' carregado com sucesso!");
         }
     });
-    /*console.log("wowowow loading content finished " + "loadHeader: " + loadHeader + " loadFooter: " + loadFooter);
-if (loadFooter && loadHeader) {
-    $("#_menu-toggle1").click(function () {
-        $(this).toggleClass("active");
-        $(".mobile-nav").toggleClass("show-mobile-nav");
-    });
-
-    $("#_log-in").click(function (e) {
-        $(".logged-in").toggleClass("hide");
-        $(".not-logged-in").toggleClass("hide");
-    });
-
-    $("#_log-out").click(function (e) {
-        $(".logged-in").toggleClass("hide");
-        $(".not-logged-in").toggleClass("hide");
-    });
-
-    $('html').click(function (event) {
-        var clickedOn = $(event.target);
-        if (clickedOn.parents().addBack().is("#_menu-toggle1")) {
-            console.log("Clicked on", clickedOn[0], "inside the div");
-        } else {
-            console.log("Clicked on", clickedOn[0], "outside the div");
-            if ($("#_menu-toggle1").hasClass("active")) {
-                $("#_menu-toggle1").toggleClass("active");
-                $(".mobile-nav").toggleClass("show-mobile-nav");
-            }
-        }
-    });
-}*/
-    /* /if */
 });

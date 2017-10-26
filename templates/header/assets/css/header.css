@@ -42,6 +42,66 @@ nav {
     flex-basis: 0;
 }
 
+.navigation h2 {
+    display: none;
+}
+
+.navigation {
+    transition: 0.5s;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: red;
+}
+
+.navigation li {
+    text-align: center;
+    margin: 0 10px;
+    /*    background-color: bisque;*/
+}
+
+.navigation a {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: red;
+    position: relative;
+    /*    padding: 3px 5px;*/
+    /*    background-color: aliceblue;*/
+}
+
+.navigation a::after {
+    content: "";
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.navigation a:hover::after {
+    content: "";
+    display: inline-block;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    opacity: 0.3;
+    transition: .4s;
+    box-shadow: 2px 2px .5em #F00;
+    visibility: visible;
+}
+
+.desktop-nav {
+    display: none;
+}
 
 .desktop-nav ul {
     display: flex;
@@ -159,11 +219,11 @@ nav {
 .mobile-nav {
     background: white;
     position: fixed;
-    top: -392px;
+    top: -382px;
     left: 0px;
     width: 100%;
     transition: 0.5s;
-    z-index: 9;
+    z-index: -1;
 }
 
 .mobile-nav ul {
@@ -183,7 +243,14 @@ nav {
     top: 82px;
 }
 
+@media (max-width: 480px) {}
+
+@media (min-width: 481px) and (max-width: 930px) {}
+
 @media (min-width: 931px) {
+    .desktop-nav {
+        display: block;
+    }
     .mobile-nav {
         display: none;
     }
@@ -206,8 +273,4 @@ nav {
     .user-info {
         display: block;
     }
-}
-
-aside {
-    display: none;
 }

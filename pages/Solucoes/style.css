@@ -1,3 +1,20 @@
+/*#profSandra {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: auto;
+    transform: translate(10%, -50%);
+}*/
+
+#test_ {
+    animation-name: fadeIn;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
 #_demo .hero .descr {
     transform: translate(0, 0);
     width: 40%;
@@ -25,14 +42,3 @@
         object-position: bottom right;
     }
 }
-/*mobile*/
-
-@media (max-width: 480px) {}
-
-/*tablet*/
-
-@media (min-width: 481px) and (max-width: 930px) {}
-
-/*desktop*/
-
-@media (min-width: 931px) {}

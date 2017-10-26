@@ -24,10 +24,6 @@
     <link rel="stylesheet" href="../../pages/DemoEscola/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- animate on scroll AOS-->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="../../assets/js/coruja_jQuery.js"></script>
-    </script>
 </head>
 
 <body>
@@ -61,9 +57,8 @@
                 <li><a href="https://canal.corujaedu.com.br/Conta/Login" id="_log-in">Acesse sua conta</a></li>
         -->
                 <li><a href="#" id="_log-in">Acesse sua conta</a></li>
-                <li>Não tem conta?</li>
-                <li><a href="#">Cadastre-se</a></li>
-                <!--<li><p>Não tem conta?</p><a href="#">Cadastre-se</a></li>-->
+                <li>
+                    <p>Não tem conta?</p><a href="#">Cadastre-se</a></li>
             </ul>
             <ul class="logged-in hide">
                 <li>Oooooooooooooooooooooo</li>
@@ -100,7 +95,7 @@
             <div class="clear"></div>
         </section>
 
-        <section class="center black-bg" id="_aval">
+        <section class="center black-bg" id="_oqfzm">
             <div class="sec-ele descr">
                 <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Como funciona?</h2>
                 <p>A Avaliação Coruja é uma avaliação adaptativa, criada a partir de uma árvore de decisões, e mapeia o desempenho da criança em competências e habilidades em Língua Portuguesa, Matemática <strong>ou</strong> Habilidades de Aprendizagem. O sistema gera relatórios personalizados para monitorar a evolução da aprendizagem de cada criança, turma e ano escolar determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
@@ -110,37 +105,20 @@
                     <img src="https://www.compareninja.com/public/images/loader_small.gif" style="display: block; width: 18px; margin: 50px auto 0;" />
                     <p style="display: none;">Created with Compare Ninja</p>
                 </div>
+                <a href="#" class="btn-red">Baixar Avaliação Demonstração</a>
             </div>
         </section>
-        <section id="_videoAvalDemo" class="center">
+
+        <section id="_aval" class="center">
             <div class="sec-ele descr">
                 <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Veja a prova em ação</h2>
                 <p>Assista a uma breve apresentação sobre as principais características da Avaliação Coruja.</p>
-                <div class="video">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/CyFaml3YhEE?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div>
+            </div>
+            <div class="sec-ele video">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/CyFaml3YhEE?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="center" id="_avalDL">
-            <div class="poster">
-                <img src="../../assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
-            </div>
-            <div class="sec-ele descr">
-                <h2>Baixe uma demonstração da Avaliação</h2>
-                <p></p>
-                <a href="#" class="btn-red">Baixar Avaliação Demonstração</a>
-                <h2>Requisitos do Sistema para a Avaliação</h2>
-                <ul>
-                    <li>Sistema Operacional: Windows 7, 8, 8.1 e 10.</li>
-                    <li>Resolução mínima: 1024x768</li>
-                    <li>Processador CPU: Intel Atom 1.33GHz</li>
-                    <li>Memória RAM: 1GB</li>
-                    <li>Disco Rígido HD: Até 2GB por Prova.</li>
-                    <li class="obs">* Necessário utilizar teclado e mouse (ou equivalente). </li>
-                    <li class="obs">* Recomenda-se o uso de fones de ouvido. </li>
-                </ul>
-            </div>
-        </section>
+
         <section class="center black-bg" id="_buy">
             <div class="sec-ele descr">
                 <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Adquira já uma de nossas soluções!</h2>
@@ -177,7 +155,6 @@
             <p>@takagi.massao</p>
         </div>
     </footer>
-    <!-- script para compare ninja -->
     <script type="text/javascript">
         (function() {
             var cn = document.createElement('script');
@@ -186,7 +163,10 @@
             var s = document.getElementsByTagName('head')[0].appendChild(cn);
         })();
     </script>
-    <script type="text/javascript" src="../../templates/header/assets/js/header.js">
-        < /body>
+    <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
+    <!-- animate on scroll AOS-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="../../assets/js/coruja_jQuery.js"></script>
+</body>
 
 </html>
