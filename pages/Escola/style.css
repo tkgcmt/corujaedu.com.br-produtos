@@ -1,5 +1,5 @@
 #_escola .background {
-    background: #333 url(/assets/img/smiling_children.jpg) no-repeat center;
+    background: #333 url("/assets/img/smiling_children.jpg") no-repeat center;
     /*    background-color: #333;*/
     background-size: cover;
     background-clip: content-box;

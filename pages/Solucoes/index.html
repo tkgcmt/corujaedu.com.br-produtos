@@ -21,93 +21,35 @@
     <link rel="stylesheet" href="../../assets/css/coruja_style.css">
     <link rel="stylesheet" href="../../templates/header/assets/css/header.css">
     <link rel="stylesheet" href="../../templates/footer/assets/css/footer.css">
-    <link rel="stylesheet" href="../../pages/DemoEscola/style.css">
+    <link rel="stylesheet" href="../../pages/Solucoes/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header id="a_header">
+    <header id="_header">
         <!-- load content from templates/header/header.html by jQuery -->
-        <h2>Coruja Educação</h2>
-        <a href="#" class="logo"><img class="logo animated fadeInDown" alt="Coruja Educação - Página Inicial" src="../../assets/img/logo.png" width="173px" height="80px"></a>
-        <nav class="desktop-nav navigation animated fadeInDown">
-            <h2>Navegação Principal - Desktop</h2>
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Soluções</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Área do Cliente</a></li>
-            </ul>
-        </nav>
-        <div class="nav-menu-toggle animated fadeInDown">
-            <span>MENU</span>
-            <div class="menu-toggle btn-red" id="_menu-toggle1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="user-info animated fadeInDown">
-            <ul class="not-logged-in">
-                <!--
-                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
-                <li><a href="https://canal.corujaedu.com.br/Conta/Login" id="_log-in">Acesse sua conta</a></li>
-        -->
-                <li><a href="#" id="_log-in">Acesse sua conta</a></li>
-                <li>
-                    <p>Não tem conta?</p><a href="#">Cadastre-se</a></li>
-            </ul>
-            <ul class="logged-in hide">
-                <li>Oooooooooooooooooooooo</li>
-                <li>Dude, what's goin on?</li>
-                <li>I dunno, do ya?</li>
-                <li><a href="#">Opções</a></li>
-                <li><a href="#" id="_log-out">Sair</a></li>
-            </ul>
-        </div>
     </header>
-    <nav class="mobile-nav navigation">
-        <h2>Navegação Principal - Mobile</h2>
-        <ul>
-            <li><a href="#">O que fazemos?</a></li>
-            <li><a href="#">Soluções</a></li>
-            <li><a href="#">Parceiros</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Área do Cliente</a></li>
-            <li><a href="#">Acessar</a></li>
-            <li><a href="#">Criar Conta</a></li>
-        </ul>
-    </nav>
-    <main id="_demo">
+    <main id="_solucoes">
         <section class="hero">
             <div class="background">
-                <img alt="Crianças alegres em ambiente escolar." src="../../assets/img/001.jpg" width="800" height="600">
             </div>
-            <div class="descr">
-                <h1 class="sec-ele" data-aos="zoom-out">Avaliação Coruja</h1>
-                <p data-aos="zoom-out">
+            <div class="sec-ele descr">
+                <div class="poster" id="_iconEscola"></div>
+                <h1>Avaliação Coruja</h1>
+                <p>
                     É a avaliação adaptativa que "monitora" os programas Coruja Escola e Coruja Especialista.
                 </p>
             </div>
-            <div class="clear"></div>
         </section>
 
         <section class="center black-bg" id="_oqfzm">
             <div class="sec-ele descr">
-                <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Como funciona?</h2>
+                <h2>Como funciona?</h2>
                 <p>A Avaliação Coruja é uma avaliação adaptativa, criada a partir de uma árvore de decisões, e mapeia o desempenho da criança em competências e habilidades em Língua Portuguesa, Matemática <strong>ou</strong> Habilidades de Aprendizagem. O sistema gera relatórios personalizados para monitorar a evolução da aprendizagem de cada criança, turma e ano escolar determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
             </div>
-            <div class="sec-ele descr">
-                <div id="compareNinjaTable_119654">
-                    <img src="https://www.compareninja.com/public/images/loader_small.gif" style="display: block; width: 18px; margin: 50px auto 0;" />
-                    <p style="display: none;">Created with Compare Ninja</p>
-                </div>
-                <a href="#" class="btn-red">Baixar Avaliação Demonstração</a>
-            </div>
         </section>
+        <!--
 
         <section id="_aval" class="center">
             <div class="sec-ele descr">
@@ -118,15 +60,17 @@
                 <iframe width="800" height="450" src="https://www.youtube.com/embed/CyFaml3YhEE?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-
+-->
+        <!--
         <section class="center black-bg" id="_buy">
             <div class="sec-ele descr">
                 <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Adquira já uma de nossas soluções!</h2>
                 <a href="#" class="btn-red">Acessar a loja</a>
             </div>
         </section>
+        -->
     </main>
-    <footer id="a_footer">
+    <footer id="_footer">
         <!-- load content from templates/footer/footer.html by jQuery -->
         <address>
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="contato">
@@ -155,14 +99,6 @@
             <p>@takagi.massao</p>
         </div>
     </footer>
-    <script type="text/javascript">
-        (function() {
-            var cn = document.createElement('script');
-            cn.type = 'text/javascript';
-            cn.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.compareninja.com/API/table/119654?cnurl=' + window.location.href;
-            var s = document.getElementsByTagName('head')[0].appendChild(cn);
-        })();
-    </script>
     <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
     <!-- animate on scroll AOS-->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>

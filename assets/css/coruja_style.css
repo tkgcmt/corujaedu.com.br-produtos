@@ -5,21 +5,21 @@
 h1 {
     font-family: 'Bariol', sans-serif;
     font-size: 36px;
-    line-height: 1.5;
+    line-height: 1.2;
     padding: 18px 0;
 }
 
 h2 {
     font-family: 'Bariol', sans-serif;
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 1.2;
     padding: 28px 0;
 }
 
 h3 {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 1.2;
     padding: 12px 0 30px;
 }
 
@@ -27,6 +27,7 @@ body {
     background-color: white;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 ul li {
@@ -39,7 +40,7 @@ ul a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     -webkit-hyphens: auto;
     hyphens: auto;
@@ -219,8 +220,7 @@ main {
 }
 
 .sec-ele {
-    flex: 1 1 383px;
-    /*    height: auto;*/
+    flex: 1 1 240px;
     margin: 20px;
 }
 
@@ -355,6 +355,39 @@ main {
     }
 }
 
+@media (min-width: 481px) {
+    .side-by-side:nth-child(odd) {
+        text-align: left;
+    }
+
+    .side-by-side:nth-child(even) {
+        text-align: right;
+        flex-direction: row-reverse;
+    }
+
+    .side-by-side:nth-child(odd) .btn-red,
+    .side-by-side:nth-child(odd) p,
+    .side-by-side:nth-child(odd) ul,
+    .side-by-side:nth-child(odd) h2 {
+        margin-left: 0;
+    }
+
+    .side-by-side:nth-child(even) .btn-red,
+    .side-by-side:nth-child(even) p,
+    .side-by-side:nth-child(even) ul,
+    .side-by-side:nth-child(even) h2 {
+        margin-right: 0;
+    }
+
+    .side-by-side:nth-child(odd) .dl-samples {
+        justify-content: flex-start;
+    }
+
+    .side-by-side:nth-child(even) .dl-samples {
+        justify-content: flex-end;
+    }
+}
+
 /* Desktop */
 
 @media (min-width: 931px) {
@@ -401,6 +434,7 @@ main {
         max-width: 698px;
         margin: 0 auto;
     }
+    /*
 
     .side-by-side:nth-child(odd) {
         text-align: left;
@@ -431,8 +465,7 @@ main {
 
     .side-by-side:nth-child(even) .dl-samples {
         justify-content: flex-end;
-    }
-
+    }*/
     .poster {
         max-height: 500px;
     }
@@ -442,6 +475,7 @@ main {
     }
 
     .sec-ele {
+        flex-basis: 383px;
         margin: 40px;
     }
 

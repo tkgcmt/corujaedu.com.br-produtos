@@ -1,44 +1,33 @@
-/*#profSandra {
+#_solucoes .hero {
+    /*    display: flex;*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#_solucoes .hero .background {
     position: absolute;
-    top: 50%;
+    background-image: url("/assets/img/solucoes_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 110px;
     left: 0;
-    width: 40%;
-    height: auto;
-    transform: translate(10%, -50%);
-}*/
-
-#test_ {
-    animation-name: fadeIn;
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
 }
 
-#_demo .hero .descr {
-    transform: translate(0, 0);
-    width: 40%;
-    max-width: 40%;
-    top: auto;
-    bottom: 10vh;
-    left: auto;
-    right: 0;
-    margin-right: 40px;
+#_solucoes .hero .sec-ele {
+    color: black;
+    background-color: crimson;
 }
 
-#_demo .hero p,
-#_demo .hero h1 {
+#_solucoes .hero p,
+#_solucoes .hero h1 {
     color: #333;
     margin: 0;
+    padding: 0;
     text-align: right;
+    max-width: none;
 }
 
-#_demo .hero h1 {
-    margin: 20px 0;
-}
-
-@media (max-width: 930px) {
-    #_demo .hero img {
-        object-position: bottom right;
-    }
+#_solucoes .hero .sec-ele {
+    flex: 1 1 383px;
 }
