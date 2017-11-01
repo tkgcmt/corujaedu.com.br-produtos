@@ -1,33 +1,44 @@
 #_solucoes .hero {
-    /*    display: flex;*/
+    background-image: url("/assets/img/solucoes_hero.jpg");
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#_solucoes .hero .background {
-    position: absolute;
-    background-image: url("/assets/img/solucoes_hero.jpg");
-    background-size: cover;
-    background-position: center;
-    top: 110px;
-    left: 0;
-}
-
 #_solucoes .hero .sec-ele {
     color: black;
     background-color: crimson;
+    padding: 16px;
+}
+
+#_solucoes .hero .descr {
+    top: 60px;
+}
+
+#_solucoes .hero h1 {
+    color: black;
+    flex-basis: 100%;
 }
 
 #_solucoes .hero p,
-#_solucoes .hero h1 {
+#_solucoes .hero h2 {
     color: #333;
     margin: 0;
-    padding: 0;
-    text-align: right;
+    text-align: center;
     max-width: none;
 }
 
+#_solucoes .hero h2 {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
 #_solucoes .hero .sec-ele {
-    flex: 1 1 383px;
+    flex: 0 1 375px;
+}
+
+.sec-ele .hero-opt {
+    font-size: 88px;
 }
