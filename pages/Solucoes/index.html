@@ -30,27 +30,28 @@
     <header id="_header">
         <!-- load content from templates/header/header.html by jQuery -->
     </header>
-
-    <nav>
-        <a class="go2start" href="#_solucoes">
+    <nav class="go2start">
+        <a href="#_solucoes">
             <i class="fa fa-fast-backward fa-lg"></i>
+            <span class="show-on-hover"> Voltar ao Início</span>
         </a>
     </nav>
-
     <main id="_solucoes">
         <section class="hero">
             <h1>Soluções Coruja</h1>
             <div class="sec-ele">
-                <p class="hero-opt">
-                    <i class="fa fa-link fa-lg"></i>
-                </p>
-                <a href="#_linhaEsco">Linha Escola</a>
+                <a class="hero-opt" href="#_linhaEsco">
+                    <img src="/assets/img/escola.svg" alt="">
+                    <figcaption>Linha Escola</figcaption>
+                    <!--<img src="/assets/img/escola.svg" alt=""><i class="fa fa-link fa-lg"></i><br />-->
+                </a>
             </div>
             <div class="sec-ele">
-                <p class="hero-opt">
-                    <i class="fa fa-link fa-lg"></i>
-                </p>
-                <a href="#_linhaEspe">Linha Especialista</a>
+                <a class="hero-opt" href="#_linhaEspe">
+                    <img src="/assets/img/especialista.svg" alt="">
+                    <figcaption>Linha Especialista</figcaption>
+                    <!--<i class="fa fa-link fa-lg"></i><br />-->
+                </a>
             </div>
         </section>
         <section class="center black-bg anchor" id="_linhaEsco">
@@ -188,6 +189,7 @@
         </section>
         -->
     </main>
+
     <footer id="_footer">
         <!-- load content from templates/footer/footer.html by jQuery -->
         <address>
