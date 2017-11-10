@@ -1,3 +1,7 @@
+@import url("/assets/css/reset.css");
+@import url("/assets/css/coruja_style.css");
+@import url("/templates/footer/assets/css/footer.css");
+@import url("/templates/header/assets/css/header.css");
 #_solucoes .hero {
     background-image: url("/assets/img/solucoes_hero.jpg");
     display: flex;
@@ -33,7 +37,7 @@
 }
 
 #_solucoes .hero .sec-ele {
-    flex: 0 1 348px;
+    flex: 0 1 280px;
 }
 
 .sec-ele .hero-opt {
@@ -49,48 +53,6 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-}
-
-.go2start {
-    padding: 10px;
-    font-size: 20px;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    color: orange;
-    border-radius: 0px 13px 13px 0px;
-    background: rgba(255, 255, 255, 1);
-    opacity: .6;
-    transition: .3s;
-}
-
-.go2start a {
-    text-decoration: none;
-    color: orange;
-}
-
-.go2start i {
-    background: rgba(255, 255, 255, 0.0);
-    transform: rotate(90deg);
-}
-
-.go2start:hover {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.8);
-    transition: .3s;
-}
-
-.show-on-hover {
-    color: orange;
-    display: none;
-    transition: .3s;
-}
-
-.go2start:hover .show-on-hover,
-.go2start:hover a {
-    display: inline;
-    color: #333;
-    transition: .3s;
 }
 
 .hero-opt img {
@@ -126,4 +88,13 @@
 
 @media (min-width: 931px) {
     .hero-opt {}
+    #_solucoes .hero .sec-ele {
+        flex: 0 1 340px;
+    }
+}
+
+
+#_crjEspe img {
+    object-fit: cover;
+    object-position: bottom;
 }

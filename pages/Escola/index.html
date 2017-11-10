@@ -8,16 +8,16 @@
     <!-- fontes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
-    <link href="/assets/fonts/bariol_regular-webfont.woff">
+    <link href="../../assets/fonts/bariol_regular-webfont.woff">
     <!-- reset.css -->
-    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
     <!-- estilos coruja -->
-    <link rel="stylesheet" href="/assets/css/coruja_style.css">
-    <link rel="stylesheet" href="/templates/header/assets/css/header.css">
-    <link rel="stylesheet" href="/templates/footer/assets/css/footer.css">
-    <link rel="stylesheet" href="/pages/Escola/style.css">
+    <link rel="stylesheet" href="../../assets/css/coruja_style.css">
+    <link rel="stylesheet" href="../../templates/header/assets/css/header.css">
+    <link rel="stylesheet" href="../../templates/footer/assets/css/footer.css">
+    <link rel="stylesheet" href="../../pages/Escola/style.css">
     <!-- font-awesome.css -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
     <!-- animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Animate on Scroll aos.css -->
@@ -26,7 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- animate on scroll AOS-->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="/assets/js/coruja_jQuery.js"></script>
+    <script src="../../assets/js/coruja_jQuery.js"></script>
 </head>
 
 <body>
@@ -46,6 +46,7 @@
                 </p>
             </div>
         </section>
+        <div class="test"></div>
         <section class="center black-bg" id="_oqfzm">
             <div class="sec-ele descr">
                 <h2>Sobre o programa</h2>
@@ -79,7 +80,7 @@
             <div class="sec-ele descr">
                 <h2>Cadernos do Aluno</h2>
                 <p>Os cadernos são aliados dos gestores e professores para um ensino mais eficiente e estão alinhado às especificidades dos diversos alunos na sala de aula. São atividades organizadas em diferentes eixos, fundamentais para a aprendizagem dos conteúdos acadêmicos da Língua Portuguesa e da Matemática durante o ciclo de alfabetização. O conteúdo do caderno está organizado de forma interdisciplinar e personalizada, com diferentes níveis de complexidade.</p>
-                <h2>Baixe uma amostra gratuita dos cadernos:</h2>
+                <h3>Baixe uma amostra gratuita dos cadernos:</h3>
                 <div class="dl-samples">
                     <ul>
                         <li>
@@ -148,15 +149,16 @@
                     </ul>
                 </div>
             </div>
-        </section><section class="center" id="_aval">
-    <div class="poster">
-        <!--                <img src="/assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">-->
-    </div>
-    <div class="sec-ele descr">
-        <h2>Conteúdos da plataforma</h2>
-        <p>Veja também artigos selecionados e traduzidos, sugestões de intervenção pedagógica e mais.</p>
-    </div>
-</section>
+        </section>
+        <section class="center" id="_aval">
+            <div class="poster">
+                <!--                <img src="/assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">-->
+            </div>
+            <div class="sec-ele descr">
+                <h2>Conteúdos da plataforma</h2>
+                <p>Veja também artigos selecionados e traduzidos, sugestões de intervenção pedagógica e mais.</p>
+            </div>
+        </section>
         <section class="center black-bg" id="_buy">
             <div class="sec-ele descr">
                 <h2>Adquira já o Coruja Escola</h2>
@@ -165,14 +167,40 @@
         </section>
     </main>
 
-    <footer id="_footer">
-        <!-- load content from templates/footer/footer.html by jQuery -->
+    <footer id="a_footer">
+        <address>
+            <div class="contato">
+                <h3>Dúvidas?</h3>
+                <!--            <a href="#">Sobre a Coruja</a>-->
+                <a href="#"><i class="fa fa-link fa-lg"></i>Fale Conosco</a>
+                <a href="#"><i class="fa fa-link fa-lg"></i>Perguntas Frequentes</a>
+                <a href="#"><i class="fa fa-link fa-lg"></i>Equipe</a>
+            </div>
+            <div class="social-medias">
+                <h3>Siga-nos</h3>
+                <a href="https://www.facebook.com/corujaedu"><i class="fa fa-facebook-official fa-lg"></i> Facebook</a>
+                <a href="https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg"><i class="fa fa-youtube-square fa-lg"></i> Youtube</a>
+                <a href="https://medium.com/coruja-educa%C3%A7%C3%A3o"><i class="fa fa-medium fa-lg"></i> Medium - Blog</a>
+            </div>
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
+                <p>Office 7A</p>
+                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
+            </div>
+        </address>
+        <div class="creditos">
+            <h3>créditos</h3>
+            <p>₢flaticon</p>
+            <p>@takagi.massao</p>
+        </div>
     </footer>
     <script src="/assets/baseliner/baseliner.js"></script>
     <script>
         window.onload = function() {
             baseliner = new Baseliner(8);
         }
+
     </script>
 </body>
 

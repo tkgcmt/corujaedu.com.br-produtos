@@ -135,14 +135,12 @@ main {
     display: block;
     width: 100%;
     height: calc(100vh - 82px);
-    background-color: paleturquoise;
 }
 
 .background {
     width: inherit;
     height: inherit;
     position: relative;
-    /*    background-image: url("/assets/img/smiling_children.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,20 +153,6 @@ main {
     height: inherit;
     object-fit: cover;
 }
-
-/*
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: inherit;
-    height: inherit;
-    background-color: black;
-    opacity: 0.4;
-    object-fit: cover;
-}
-*/
 
 .hero .descr {
     position: absolute;
@@ -220,7 +204,7 @@ main {
 }
 
 .sec-ele {
-    flex: 1 1 383px;
+    flex: 1 1 257px;
     margin: 20px;
 }
 
@@ -345,16 +329,16 @@ main {
         max-height: inherit;
     }
     .sec-ele {
+        background-color: aliceblue;
+        flex-basis: 300px;
         margin: 30px;
     }
     .center .descr {
         padding: 40px 0 60px;
     }
-
-    #profSandra {
-        object-position: center center;
-    }
 }
+
+/* Tablets & Desktops */
 
 @media (min-width: 481px) {
     .side-by-side:nth-child(odd) {
@@ -475,17 +459,13 @@ main {
         max-height: inherit;
     }
 
-    .sec-ele {
-        flex-basis: 383px;
-        margin: 40px;
-    }
-
     .center .descr {
         padding: 50px 0 80px;
     }
 
-    #profSandra {
-        object-position: center right;
+    .sec-ele {
+        flex-basis: 357px;
+        margin: 40px;
     }
 }
 
