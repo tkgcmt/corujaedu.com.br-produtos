@@ -98,3 +98,7 @@
     object-fit: cover;
     object-position: bottom;
 }
+
+i {
+    font-style: italic;
+}
