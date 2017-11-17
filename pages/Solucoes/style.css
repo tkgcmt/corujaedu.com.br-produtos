@@ -1,9 +1,9 @@
-@import url("/assets/css/reset.css");
-@import url("/assets/css/coruja_style.css");
-@import url("/templates/footer/assets/css/footer.css");
-@import url("/templates/header/assets/css/header.css");
+@import url("../../assets/css/reset.css");
+@import url("../../assets/css/coruja_style.css");
+@import url("../../templates/footer/assets/css/footer.css");
+@import url("../../templates/header/assets/css/header.css");
 #_solucoes .hero {
-    background-image: url("/assets/img/solucoes_hero.jpg");
+    background-image: url("../../assets/img/solucoes_hero.jpg");
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

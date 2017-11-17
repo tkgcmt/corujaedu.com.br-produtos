@@ -23,9 +23,22 @@ h3 {
     padding: 12px 0 30px;
 }
 
+body,
+h3,
+a,
+p,
+ul,
+li,
+textarea,
+label,
+input,
+button {
+    font-family: 'Lato', sans-serif !important;
+}
+
+
 body {
     background-color: white;
-    font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -39,11 +52,16 @@ ul a {
     text-decoration: none;
 }
 
-p {
+p,
+label {
     font-size: 14px;
     line-height: 1.5;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+
+textarea {
+    font-size: 12px;
 }
 
 .btn-white {
@@ -316,7 +334,8 @@ main {
         font-size: 32px;
         margin-bottom: 20px;
     }
-    p {
+    p,
+    label {
         font-size: 14px;
     }
     .center h3::after {
@@ -329,12 +348,14 @@ main {
         max-height: inherit;
     }
     .sec-ele {
-        background-color: aliceblue;
         flex-basis: 300px;
         margin: 30px;
     }
     .center .descr {
         padding: 40px 0 60px;
+    }
+    textarea {
+        font-size: 13px;
     }
 }
 
@@ -388,7 +409,8 @@ main {
         font-size: 36px;
         margin-bottom: 24px;
     }
-    p {
+    p,
+    label {
         font-size: 16px;
     }
 
@@ -466,6 +488,9 @@ main {
     .sec-ele {
         flex-basis: 357px;
         margin: 40px;
+    }
+    textarea {
+        font-size: 14px;
     }
 }
 

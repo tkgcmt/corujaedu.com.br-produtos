@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coruja Educação - Coruja Escola</title>
+    <!-- fontes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="/assets/fonts/bariol_regular-webfont.woff">
+    <!-- reset.css -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <!-- estilos coruja -->
+    <link rel="stylesheet" href="/assets/css/coruja_style.css">
+    <link rel="stylesheet" href="/templates/header/assets/css/header.css">
+    <link rel="stylesheet" href="/templates/footer/assets/css/footer.css">
+    <link rel="stylesheet" href="/pages/Vagas/style.css">
+    <!-- font-awesome.css -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Animate on Scroll aos.css -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- animate on scroll AOS-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="/assets/js/coruja_jQuery.js"></script>
+</head>
+
+<body>
+    <header id="_header">
+        <!-- load content from templates/header/header.html by jQuery -->
+    </header>
+    <main id="_vagas">
+        <section class="center">
+            <div class="descr">
+                <h1>Trabalhe com a Coruja</h1>
+                <p>
+                    Quer fazer parte da nossa equipe? Preencha o formulário abaixo.
+                </p>
+                <quote>
+                    PS: Nossa equipe adora hambúrguer, até os veganos.
+                </quote>
+            </div>
+        </section>
+        <section class="form">
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname">Nome:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="">
+                    <label for="lname">E-mail:</label>
+                    <input type="text" id="fmail" name="email" placeholder="">
+                    <!--<label for="country">Estado</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">Brasil</option>
+                    </select>-->
+                    <div class="custom-file-upload">
+                        <label for="file">Currículo: </label>
+                        <input type="file" id="file" name="myfiles[]" multiple />
+                    </div>
+                    <label id="alo" for="subject">Mensagem:</label>
+                    <textarea id="subject" name="subject" placeholder="Faça uma breve apresentação sobre você e seu interesse pela Coruja."></textarea>
+                    <input id="ola" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer id="_footer">
+        <!-- load content from templates/footer/footer.html by jQuery -->
+    </footer>
+</body>
+
+</html>

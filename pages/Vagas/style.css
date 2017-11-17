@@ -1,0 +1,102 @@
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+.custom-file-upload {
+    display: block;
+    width: 100%;
+}
+
+.custom-file-upload label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-upload-wrapper {
+    margin-bottom: 5px;
+}
+
+.file-upload-input {
+    width: 100%;
+    color: #fff;
+    /*    border: none;*/
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    /*    float: left;*/
+    margin-right: 5%;
+    /* IE 9 Fix */
+}
+
+input:hover,
+input:focus {
+    background-color: #eef;
+    outline: none;
+}
+
+.file-upload-button {
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.2s ease-in;
+    min-width: 190px;
+    /*    clear: both;*/
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.custom-file-upload {
+    height: 65px;
+}
+
+textarea {
+    height: 200px;
+    width: calc(100% - 6px);
+}
+
+.container {
+    width: 50%;
+    padding: 1px;
+    margin: 0 auto;
+}
+
+label,
+input {
+    text-decoration: none;
+    display: block;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    height: 30px;
+    border-style: groove;
+    min-width: 300px;
+    width: 100%;
+    width: calc (100% - 20px);
+}
+
+#ola {
+    min-width: 50px;
+    max-width: 70px;
+    margin-left: auto;
+    margin-right: 0;
+    line-height: 10px;
+}
+
+quote {
+    font-style: italic;
+}
+
+
+@media (min-width: 481px) and (max-width: 930px) {}
+
+@media (min-width: 931px) {}
