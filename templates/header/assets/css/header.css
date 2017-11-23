@@ -1,6 +1,7 @@
 /* header */
 
 header {
+    font-family: 'Lato', sans-serif;
     position: fixed;
     top: 0;
     right: 0;
@@ -69,6 +70,7 @@ nav {
     font-weight: 500;
     color: red;
     position: relative;
+    text-decoration: none;
     /*    padding: 3px 5px;*/
     /*    background-color: aliceblue;*/
 }
@@ -120,6 +122,10 @@ nav {
     margin-right: 20px;
     color: #333;
     font-weight: 200;
+}
+
+.nav-menu-toggle > .btn-red {
+    padding: 10px;
 }
 
 .menu-toggle {
@@ -183,7 +189,7 @@ nav {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 205px;
-    font-size: 13px;
+    font-size: 14px;
     display: none;
 }
 

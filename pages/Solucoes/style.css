@@ -1,8 +1,5 @@
-@import url("../../assets/css/reset.css");
 @import url("../../assets/css/coruja_style.css");
-@import url("../../templates/footer/assets/css/footer.css");
-@import url("../../templates/header/assets/css/header.css");
-#_solucoes .hero {
+.hero {
     background-image: url("../../assets/img/solucoes_hero.jpg");
     display: flex;
     flex-wrap: wrap;
@@ -11,33 +8,38 @@
     align-items: center;
 }
 
-#_solucoes .hero .sec-ele {
+.hero .sec-ele {
     color: black;
     /*    background-color: crimson;*/
     padding: 16px;
     margin-top: -40px;
+    align-self: baseline;
 }
 
-#_solucoes .hero h1 {
+.hero h1 {
     color: black;
     flex-basis: 100%;
 }
 
-#_solucoes .hero p,
-#_solucoes .hero h2 {
+.hero p,
+.hero h2 {
     color: #333;
     margin: 0;
     text-align: center;
     max-width: none;
 }
 
-#_solucoes .hero h2 {
+.hero h2 {
     padding-top: 12px;
     padding-bottom: 20px;
 }
 
-#_solucoes .hero .sec-ele {
+.hero .sec-ele {
     flex: 0 1 280px;
+}
+
+.hero figcaption {
+    font-size: 28px;
 }
 
 .sec-ele .hero-opt {
@@ -46,7 +48,7 @@
 
 .hero-opt {
     font-family: 'Bariol', sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     text-decoration: none;
     color: #e24301;
     display: flex;
@@ -56,9 +58,11 @@
 }
 
 .hero-opt img {
-    width: 150px;
+    width: 80%;
     margin: 0 auto;
 }
+
+
 
 /*mobile*/
 
@@ -82,21 +86,28 @@
     .hero .sec-ele {
         flex: 1 1 100px;
     }
+    .hero figcaption {
+        font-size: 32px;
+    }
 }
 
 /*desktop*/
 
 @media (min-width: 931px) {
     .hero-opt {}
-    #_solucoes .hero .sec-ele {
+    .hero .sec-ele {
         flex: 0 1 340px;
+    }
+    .hero figcaption {
+        font-size: 36px;
     }
 }
 
 
-#_crjEspe img {
+.showcase img {
     object-fit: cover;
     object-position: bottom;
+    margin-top: 4em;
 }
 
 i {

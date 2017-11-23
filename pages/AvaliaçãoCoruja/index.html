@@ -9,12 +9,6 @@
     <link href="../../assets/fonts/bariol_regular-webfont.woff">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
-    <!-- reset.css -->
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <!-- font-awesome.css -->
-    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
-    <!-- animate.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Animate on Scroll aos.css -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- estilos coruja -->
@@ -48,13 +42,13 @@
         </section>
 
         <section class="center black-bg" id="_aval">
-            <div class="sec-ele descr">
-                <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Como funciona?</h2>
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
+                <h2>Como funciona?</h2>
                 <p>A Avaliação Coruja é uma avaliação adaptativa, criada a partir de uma árvore de decisões, e mapeia o desempenho da criança em competências e habilidades em Língua Portuguesa, Matemática <strong>ou</strong> Habilidades de Aprendizagem. O sistema gera relatórios personalizados para monitorar a evolução da aprendizagem de cada criança, turma e ano escolar determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
             </div>
         </section>
         <section id="_compareTable" class="center">
-            <div class="sec-ele descr">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Comparação Coruja Especialista e Coruja Escola</h2>
                 <div id="compareNinjaTable_119654">
                     <img src="https://www.compareninja.com/public/images/loader_small.gif" style="display: block; width: 18px; margin: 50px auto 0;" />
@@ -72,28 +66,30 @@
             </div>
         </section>
         <section class="center" id="_avalDL">
-            <div class="poster">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="poster">
                 <img src="../../assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
             </div>
             <div class="sec-ele descr">
-                <h2>Gostou? Experimente a nossa<br>Avaliação agora mesmo!</h2>
+                <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Gostou? Experimente a nossa<br>Avaliação agora mesmo!</h2>
                 <p>Essa demonstração contempla as questões da área de Operações na disciplina de Matemática, para que você veja como funciona a nossa árvore de decisão.</p>
                 <a href="#" class="btn-red">Baixar Avaliação Demonstração</a>
-                <h2>Requisitos do Sistema para a Avaliação</h2>
-                <ul>
-                    <li>Sistema Operacional: Windows 7, 8, 8.1 e 10 (Em breve para MAC OS).</li>
-                    <li>Resolução mínima: 1024x768</li>
-                    <li>Processador CPU: Intel Atom 1.33GHz</li>
-                    <li>Memória RAM: 1GB</li>
-                    <li>Disco Rígido HD: Até 2GB por Prova.</li>
-                    <li class="obs">* Necessário utilizar teclado e mouse (ou equivalente). </li>
-                    <li class="obs">* Recomenda-se o uso de fones de ouvido. </li>
-                </ul>
+                <div class="descr">
+                    <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Requisitos do Sistema para a Avaliação</h2>
+                    <ul data-aos="zoom-out" data-aos-anchor-placement="center-bottom">
+                        <li>Sistema Operacional: Windows 7, 8, 8.1 e 10 (Em breve para MAC OS).</li>
+                        <li>Resolução mínima: 1024x768</li>
+                        <li>Processador CPU: Intel Atom 1.33GHz</li>
+                        <li>Memória RAM: 1GB</li>
+                        <li>Disco Rígido HD: Até 2GB por Prova.</li>
+                        <li class="obs">* Necessário utilizar teclado e mouse (ou equivalente). </li>
+                        <li class="obs">* Recomenda-se o uso de fones de ouvido. </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="center black-bg" id="_buy">
-            <div class="sec-ele descr">
-                <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Adquira já uma de nossas soluções!</h2>
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
+                <h2>Adquira já uma de nossas soluções!</h2>
                 <a href="#" class="btn-red">Acessar a loja</a>
             </div>
         </section>
@@ -129,6 +125,15 @@
     </footer>
     <!-- script para compare ninja -->
     <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
+    <script type="text/javascript">
+        (function() {
+            var cn = document.createElement('script');
+            cn.type = 'text/javascript';
+            cn.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.compareninja.com/API/table/119654?cnurl=' + window.location.href;
+            var s = document.getElementsByTagName('head')[0].appendChild(cn);
+        })();
+
+    </script>
 </body>
 
 </html>
