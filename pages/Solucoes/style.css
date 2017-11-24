@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: auto;
 }
 
 .hero .sec-ele {
@@ -79,9 +80,6 @@
 /*tablet*/
 
 @media (min-width: 481px) and (max-width: 930px) {
-    .hero {
-        height: auto;
-    }
     .hero-opt {}
     .hero .sec-ele {
         flex: 1 1 100px;
@@ -94,7 +92,6 @@
 /*desktop*/
 
 @media (min-width: 931px) {
-    .hero-opt {}
     .hero .sec-ele {
         flex: 0 1 340px;
     }
@@ -108,8 +105,4 @@
     object-fit: cover;
     object-position: bottom;
     margin-top: 4em;
-}
-
-i {
-    font-style: italic;
 }

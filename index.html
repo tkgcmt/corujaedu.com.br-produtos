@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <!-- estilos coruja -->
     <link rel="stylesheet" href="assets/css/coruja_style.css">
-    <link rel="stylesheet" href="templates/header/assets/css/header.css">
-    <link rel="stylesheet" href="templates/footer/assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <!-- font-awesome.css -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -24,6 +22,9 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -34,13 +35,11 @@
     <main id="_home">
         <section class="hero" id="_intro">
             <div class="background">
-                <!--                <img alt="Crianças alegres em ambiente escolar." src="assets/img/smiling_children.jpg" width="1920" height="1080">-->
-                <!--                <div class="overlay"></div>-->
             </div>
             <div class="descr">
                 <h1>Coruja Educação</h1>
-                <p>
-                    Acreditamos que cada criança é única, <br> Aprende de maneiras diferentes, <br> Cada uma no seu próprio ritmo.
+                <p class="no-margin">
+                    Acreditamos que cada <strong>criança é única</strong>, <br> aprende de maneiras <strong>particular</strong>, <br> cada uma no seu <strong>próprio</strong> ritmo.
                 </p>
             </div>
         </section>
@@ -48,110 +47,50 @@
             <div class="sec-ele descr">
                 <h2>O que fazemos?</h2>
                 <p>A Coruja Educação possui produtos e serviços voltados para complementar a experiência da criança no seu aprendizado. Temos foco em crianças de 6 a 9 anos de idade, que estão no ciclo da alfabetização. Atualmente, possuimos uma linha de produtos e serviços voltada para Escolas e outra para Especialistas de aprendizagem.</p>
-                <a href="#" class="btn-red">Acessar a loja</a>
+                <a href="/pages/Solucoes/index.html" class="btn-red">Conheça nossas soluções</a>
             </div>
         </section>
-
-        <section class="center" id="_aval">
+        <section class="center" id="_comoFunciona">
             <div class="poster">
-                <!--                <img src="assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">-->
             </div>
             <div class="sec-ele descr">
                 <h2>Como funciona?</h2>
-                <p>Baseados nas teorias da dupla americana, bla e bleh, apresentamos os conceitos de Diferenciação da Instrução nas salas de aula e clínicas. Dessa forma, cada criança recebe estímulos diversificados, que irão auxiliá-la a assimilar as novas informações da maneira mais fácil.</p>
+                <p>Baseados na <a href="#difInstr" rel="modal:open"><i>Diferenciação da Instrução</i></a>, levamos programas e materiais para os profissionais que querem engajar seus alunos e pacientes e empoderá-los de conhecimento. Cada criança recebe estímulos diversificados, que irão auxiliá-la a assimilar as novas informações da maneira mais fácil.</p>
                 <a href="#" class="btn-red">Acesse a Demo</a>
             </div>
         </section>
-        <section class="side-by-side" id="_cad_aluno">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="assets/img/LP_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.">
-                    <figcaption>Fig. 1 - Capa do caderno do aluno de Língua Portuguesa, primeiro semestre do primeiro ano.</figcaption>
-                </figure>
-            </div>
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano..">
-                    <figcaption>Fig. 2 - Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano.</figcaption>
-                </figure>
-            </div>
+        <section class="center numeros" id="_num">
             <div class="sec-ele descr">
-                <h2>Cadernos do Aluno</h2>
-                <p>Os cadernos são aliados dos gestores e professores para um ensino mais eficiente e estão alinhado às especificidades dos diversos alunos na sala de aula. São atividades organizadas em diferentes eixos, fundamentais para a aprendizagem dos conteúdos acadêmicos da Língua Portuguesa e da Matemática durante o ciclo de alfabetização. O conteúdo do caderno está organizado de forma interdisciplinar e personalizada, com diferentes níveis de complexidade.</p>
-                <h2>Baixe uma amostra gratuita dos cadernos:</h2>
-                <div class="dl-samples">
-                    <ul>
-                        <li>
-                            <a href="#">1º Ano - Língua Portuguesa</a>
-                        </li>
-                        <li>
-                            <a href="#">2º Ano - Língua Portuguesa</a>
-                        </li>
-                        <li>
-                            <a href="#">3º Ano - Língua Portuguesa</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">1º Ano - Matemática</a>
-                        </li>
-                        <li>
-                            <a href="#">2º Ano - Matemática</a>
-                        </li>
-                        <li>
-                            <a href="#">3º Ano - Matemática</a>
-                        </li>
-                    </ul>
-                </div>
+                <h2>A Coruja Educação em números:</h2>
+                <p></p>
+                <p><i>* dados coletados entre 2014 e 2017</i></p>
             </div>
-        </section>
-        <section class="side-by-side" id="_cad_prof">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="assets/img/LP_PROF_ANO_1_SEM_2_web.png" alt="Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.">
-                    <figcaption>Fig. 3 - Capa do caderno do aluno de Língua Portuguesa, segundo semestre do primeiro ano.</figcaption>
-                </figure>
+            <div class="num">
+                <span class="num-num">31337</span><br>
+                <span class="num-descr">avaliações</span><br>
+                <span class="num-caption">foram realizadas para monitorar o desenvolvimento da aprendizagem em:</span>
             </div>
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="assets/img/MAT_PROF_ANO_1_SEM_2_web.png" alt="Menina no ensino fundamental fazendo a Avaliação Coruja">
-                    <figcaption>Fig. 4 - Capa do caderno do aluno de Matemática, segundo semestre do primeiro ano.</figcaption>
-                </figure>
+            <div class="num">
+                <span class="num-num">7787</span><br>
+                <span class="num-descr">alunos</span><br>
+                <span class="num-caption">que realizaram o programa Coruja Escola, realizando atividades diferenciadas sob a supervisão de:</span>
             </div>
-            <div class="sec-ele descr">
-                <h2>Cadernos do Professor</h2>
-                <p>Os cadernos do professor permitem o acompanhamento das atividades contidas nos cadernos dos alunos. Apresenta a proposta da diferenciação da instrução, além de contar com comentários e orientações para melhorar a intervenção pedagógica dentro dessa proposta.</p>
-                <h2>Baixe uma amostra gratuita dos cadernos:</h2>
-                <div class="dl-samples">
-                    <ul>
-                        <li>
-                            <a href="#">1º Ano - Língua Portuguesa</a>
-                        </li>
-                        <li>
-                            <a href="#">2º Ano - Língua Portuguesa</a>
-                        </li>
-                        <li>
-                            <a href="#">3º Ano - Língua Portuguesa</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">1º Ano - Matemática</a>
-                        </li>
-                        <li>
-                            <a href="#">2º Ano - Matemática</a>
-                        </li>
-                        <li>
-                            <a href="#">3º Ano - Matemática</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="num">
+                <span class="num-num">322</span><br>
+                <span class="num-descr">professores</span><br>
+                <span class="num-caption">que receberam a Formação Coruja, com dicas sobre como diferenciar o ensino e como lidar com questões socioemocionais nas:</span>
+
+            </div>
+            <div class="num">
+                <span class="num-num">36</span><br>
+                <span class="num-descr">escolas</span><br>
+                <span class="num-caption">dentre escolas particulares e públicas em diversos estados do Brasil.</span>
             </div>
         </section>
         <section class="center black-bg" id="_buy">
             <div class="sec-ele descr">
-                <h2>Adquira já o Coruja Escola</h2>
-                <a href="#" class="btn-red">Acessar a loja</a>
+                <h2>Conheça todos nossos produtos e serviços!</h2>
+                <a href="/pages/Solucoes/index.html" class="btn-red">Ver soluções</a>
             </div>
         </section>
     </main>

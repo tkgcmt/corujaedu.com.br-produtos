@@ -1,6 +1,6 @@
 $(function () {
     AOS.init();
-    var root = 'http://' + window.location.host;
+    //    var root = 'http://' + window.location.host;
     var loadHeader = false;
     var loadFooter = false;
 
@@ -34,4 +34,11 @@ $(function () {
             console.log("Conteúdo de 'footer' carregado com sucesso!");
         }
     });
+    /* create navigation */
+    /*$(".side-nav").append()
+var arrayOfIds = $.map($("section"), function (n, i) {
+    return n.id;
+});
+alert(arrayOfIds);*/
+
 });

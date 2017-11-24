@@ -1,11 +1,11 @@
-#_home .background {
-    background: #333 url(/assets/img/menina_pensando.jpg) no-repeat left center;
+.background {
+    background: #333 url(/assets/img/Home-hero.jpg) no-repeat left center;
     /*    background-color: #333;*/
     background-size: cover;
     background-clip: content-box;
 }
 
-#_home .background::after {
+.background::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -16,21 +16,67 @@
     opacity: 0.2;
 }
 
-#_home .hero h1,
-#_home .hero p {
+.hero h1,
+.hero p {
     text-align: left;
+}
+
+.hero .descr {
+    min-width: 280px;
+}
+
+.poster {
+    background: url("/assets/img/faixa-home.jpg") no-repeat center;
+    background-size: cover;
+    max-height: 60vh;
+    min-height: 60vh;
+}
+
+.numeros {
+    width: 60vw;
+    margin: 10vh auto;
+}
+
+
+.numeros span {
+    font-family: 'Lato', sans-serif;
+}
+
+.num-descr {
+    font-size: 6vmin;
+}
+
+.num-num {
+    color: #e24301;
+    font-size: 20vmin;
+    line-height: 1;
+    text-align: left;
+}
+
+.num-caption {
+    font-size: 16px;
+}
+
+.num:nth-of-type(2n) {
+    flex: 1 1 50%;
+    text-align: left;
+}
+
+.num:nth-of-type(2n + 1) {
+    flex: 1 1 50%;
+    text-align: right;
 }
 
 /*mobile*/
 
 @media (max-width: 480px) {
-    #_home .background {
-        background: #333 url(/assets/img/menina_pensando.jpg) no-repeat left center;
+    .background {
+        background: #333 url("/assets/img/Home-hero.jpg") no-repeat left center;
         /*    background-color: #333;*/
         background-size: auto;
         background-clip: content-box;
     }
-    #_home .descr {
+    .descr {
         transform: translate(0, 0);
         left: 0;
     }
@@ -39,19 +85,25 @@
 /*tablet*/
 
 @media (min-width: 481px) and (max-width: 930px) {
-    #_home .descr {
+    .descr {
         transform: translate(0, 0);
         left: 8vw;
         max-width: 50%;
+    }
+    .hero .descr {
+        min-width: 400px;
     }
 }
 
 /*desktop*/
 
 @media (min-width: 931px) {
-    #_home .descr {
+    .descr {
         transform: translate(0, 0);
         left: 10vw;
         max-width: 50%;
+    }
+    .hero .descr {
+        min-width: 478px;
     }
 }

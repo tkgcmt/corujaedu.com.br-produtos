@@ -4,15 +4,15 @@ $(function () {
         $(".mobile-nav").toggleClass("show-mobile-nav");
     });
 
-    $("#_log-in").click(function (e) {
-        $(".logged-in").toggleClass("hide");
-        $(".not-logged-in").toggleClass("hide");
-    });
+    /*$("#_log-in").click(function (e) {
+    $(".logged-in").toggleClass("hide");
+    $(".not-logged-in").toggleClass("hide");
+});
 
-    $("#_log-out").click(function (e) {
-        $(".logged-in").toggleClass("hide");
-        $(".not-logged-in").toggleClass("hide");
-    });
+$("#_log-out").click(function (e) {
+    $(".logged-in").toggleClass("hide");
+    $(".not-logged-in").toggleClass("hide");
+});*/
 
     $('html').click(function (event) {
         var clickedOn = $(event.target);

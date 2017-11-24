@@ -13,15 +13,16 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- estilos coruja -->
     <link rel="stylesheet" href="../../assets/css/coruja_style.css">
-    <link rel="stylesheet" href="../../templates/header/assets/css/header.css">
-    <link rel="stylesheet" href="../../templates/footer/assets/css/footer.css">
-    <link rel="stylesheet" href="../../pages/DemoEscola/style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- animate on scroll AOS-->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="../../assets/js/coruja_jQuery.js"></script>
     </script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- animate on scroll AOS-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
     <main id="_demo">
         <section class="hero">
             <div class="background">
-                <img alt="Crianças alegres em ambiente escolar." src="../../assets/img/001.jpg" width="800" height="600">
+                <img alt="Crianças alegres em ambiente escolar." src="../../assets/img/Aval-hero.jpg" width="800" height="600">
             </div>
             <div class="descr">
                 <h1 data-aos="zoom-out">Avaliação Coruja</h1>
@@ -40,8 +41,7 @@
                 </p>
             </div>
         </section>
-
-        <section class="center black-bg" id="_aval">
+        <section id="_aval" class="center black-bg">
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Como funciona?</h2>
                 <p>A Avaliação Coruja é uma avaliação adaptativa, criada a partir de uma árvore de decisões, e mapeia o desempenho da criança em competências e habilidades em Língua Portuguesa, Matemática <strong>ou</strong> Habilidades de Aprendizagem. O sistema gera relatórios personalizados para monitorar a evolução da aprendizagem de cada criança, turma e ano escolar determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section class="center" id="_avalDL">
+        <section id="_avalDL" class="center">
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="poster">
                 <img src="../../assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
             </div>
@@ -87,44 +87,20 @@
                 </div>
             </div>
         </section>
-        <section class="center black-bg" id="_buy">
+        <section id="_buy" class="center black-bg">
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Adquira já uma de nossas soluções!</h2>
                 <a href="#" class="btn-red">Acessar a loja</a>
             </div>
         </section>
     </main>
-    <footer id="a_footer">
+    <footer id="_footer">
         <!-- load content from templates/footer/footer.html by jQuery -->
-        <address>
-            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="contato">
-                <h3>Dúvidas?</h3>
-                <!--            <a href="#">Sobre a Coruja</a>-->
-                <a href="#"><i class="fa fa-link fa-lg"></i>Fale Conosco</a>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Perguntas Frequentes</a>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Equipe</a>
-            </div>
-            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="social-medias">
-                <h3>Siga-nos</h3>
-                <a href="https://www.facebook.com/corujaedu"><i class="fa fa-facebook-official fa-lg"></i> Facebook</a>
-                <a href="https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg"><i class="fa fa-youtube-square fa-lg"></i> Youtube</a>
-                <a href="https://medium.com/coruja-educa%C3%A7%C3%A3o"><i class="fa fa-medium fa-lg"></i> Medium - Blog</a>
-            </div>
-            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="endereco">
-                <h3>Endereço</h3>
-                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                <p>Office 7A</p>
-                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
-            </div>
-        </address>
-        <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="creditos">
-            <h3>créditos</h3>
-            <p>₢flaticon</p>
-            <p>@takagi.massao</p>
-        </div>
+
     </footer>
     <!-- script para compare ninja -->
     <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
+    <!-- Compare Ninja - Comparison table -->
     <script type="text/javascript">
         (function() {
             var cn = document.createElement('script');

@@ -1,7 +1,7 @@
 @import url("../../assets/css/reset.css");
 @import url("../../assets/css/font-awesome.min.css");
-@import url("../../templates/header/assets/css/header.css");
-@import url("../../templates/footer/assets/css/footer.css");
+@import url("../../templates/header/header.css");
+@import url("../../templates/footer/footer.css");
 
 /* remember: rules are aplied in a "first come, first served" manner, overwriting past rules */
 
@@ -32,19 +32,27 @@ h3 {
     font-family: 'Lato', sans-serif;
 }
 
-main a,
-main p,
-main ul,
-main li,
 textarea,
 label,
 input,
 button,
-figcaption {
-    font-family: 'Lato', sans-serif !important;
-    font-size: 16px;
+figcaption,
+p,
+a,
+ul,
+li {
+    font-family: 'Lato', sans-serif;
     line-height: 1.5;
+    text-decoration: none;
 }
+
+main p,
+main a,
+main ul,
+main li {
+    font-size: 16px;
+}
+
 
 figcaption {
     font-size: 12px;
@@ -71,6 +79,19 @@ label {
 
 textarea {
     font-size: 12px;
+}
+
+i {
+    font-style: italic;
+}
+
+main a {
+    border-bottom: 1px dotted #aaa;
+    color: orange;
+}
+
+strong {
+    text-weight: bold;
 }
 
 .btn-white {
@@ -159,10 +180,15 @@ main {
     line-height: 1.5;
 }
 
+
 .hero {
     display: block;
     width: 100%;
     height: calc(100vh - 82px);
+}
+
+.hero strong {
+    color: yellow;
 }
 
 .background {
@@ -220,7 +246,7 @@ main {
 }
 
 .center h2 {
-    text-align: center !important;
+    text-align: center;
 }
 
 .center h2::after {
@@ -228,7 +254,7 @@ main {
     margin: 20px auto;
     width: 120px;
     height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #555;
     content: "";
 }
 
@@ -239,11 +265,12 @@ main {
 }
 
 .black-bg h2::after {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
+    opacity: 0.3;
 }
 
 .black-bg {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #333;
     color: #fff;
 }
 
@@ -313,14 +340,12 @@ main {
 
 /* compatibility */
 
-/*
 @supports not (display: flex) {
     body::before {
-        content: "<< Seu navegador não está atualizado ou não é suportado. Considere utilizar as versões mais atuais do Google Chrome, Firefox, Safari ou Edge. >>";
+        content: "<< Seu navegador não está atualizado ou não dá suporte ao nosso site. Considere utilizar as versões mais atuais do Google Chrome, Firefox, Safari ou Edge. >>";
         background-color: red;
     }
 }
-*/
 
 /* Adaptative VIEWS */
 
@@ -382,34 +407,34 @@ main {
 /* Tablets & Desktops */
 
 @media (min-width: 481px) {
-    .side-by-side:nth-child(odd) {
+    .side-by-side:nth-of-type(odd) {
         text-align: left;
     }
 
-    .side-by-side:nth-child(even) {
+    .side-by-side:nth-of-type(even) {
         flex-direction: row-reverse;
         text-align: right;
     }
 
-    .side-by-side:nth-child(odd) .btn-red,
-    .side-by-side:nth-child(odd) p,
-    .side-by-side:nth-child(odd) ul,
-    .side-by-side:nth-child(odd) h2 {
+    .side-by-side:nth-of-type(odd) .btn-red,
+    .side-by-side:nth-of-type(odd) p,
+    .side-by-side:nth-of-type(odd) ul,
+    .side-by-side:nth-of-type(odd) h2 {
         margin-left: 0;
     }
 
-    .side-by-side:nth-child(even) .btn-red,
-    .side-by-side:nth-child(even) p,
-    .side-by-side:nth-child(even) ul,
-    .side-by-side:nth-child(even) h2 {
+    .side-by-side:nth-of-type(even) .btn-red,
+    .side-by-side:nth-of-type(even) p,
+    .side-by-side:nth-of-type(even) ul,
+    .side-by-side:nth-of-type(even) h2 {
         margin-right: 0;
     }
 
-    .side-by-side:nth-child(odd) .dl-samples {
+    .side-by-side:nth-of-type(odd) .dl-samples {
         justify-content: flex-start;
     }
 
-    .side-by-side:nth-child(even) .dl-samples {
+    .side-by-side:nth-of-type(even) .dl-samples {
         justify-content: flex-end;
     }
 }
@@ -456,7 +481,7 @@ main {
         margin: 30px auto;
     }
 
-    .descr p,
+    .descr,
     .descr ul,
     .descr h2 {
         margin: 0 auto;
@@ -488,4 +513,6 @@ main {
     display: none;
 }
 
-@import url("../../templates/header/assets/css/header.css");
+.no-margin {
+    margin: 0;
+}

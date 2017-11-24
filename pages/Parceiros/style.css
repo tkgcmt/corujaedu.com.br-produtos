@@ -1,0 +1,36 @@
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners h2 {
+    flex: 100%;
+}
+
+.sec-ele {
+    flex-basis: 1 1 15vw;
+}
+
+.sec-ele img {
+    max-width: 60vw;
+    height: auto;
+}
+
+@media (min-width: 481px) {
+    .sec-ele:nth-of-type(1) {
+        order: 2;
+    }
+    .sec-ele:nth-of-type(2) {
+        order: 1;
+    }
+    .sec-ele:nth-of-type(3) {
+        order: 3;
+    }
+    .sec-ele:nth-of-type(4) {
+        order: 4;
+    }
+    .sec-ele:nth-of-type(5) {
+        order: 5;
+    }
+
+}

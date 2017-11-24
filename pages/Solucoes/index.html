@@ -13,150 +13,239 @@
     <!-- Animate on Scroll aos.css -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- estilos coruja -->
-    <!--<link rel="stylesheet" href="../../templates/header/assets/css/header.css">
-    <link rel="stylesheet" href="../../templates/footer/assets/css/footer.css">
-    <link rel="stylesheet" href="../../assets/css/coruja_style.css">-->
+    <link rel="stylesheet" href="../../assets/css/coruja_style.css">
     <link rel="stylesheet" href="style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- animate on scroll AOS-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+        < /head>
 
-<body>
-    <header id="_header">
-        <!-- load content from templates/header/header.html by jQuery -->
-    </header>
-    <main id="_solucoes">
-        <section class="hero">
-            <h1>Soluções Coruja</h1>
-            <div class="sec-ele">
-                <a class="hero-opt" href="#_linhaEsco">
-                    <img src="/assets/img/escola.svg" alt="">
-                    <figcaption>Linha Escola</figcaption>
-                </a>
-            </div>
-            <div class="sec-ele">
-                <a class="hero-opt" href="#_linhaEspe">
-                    <img src="/assets/img/especialista.svg" alt="">
-                    <figcaption>Linha Especialista</figcaption>
-                </a>
-            </div>
-        </section>
-        <section class="center black-bg anchor" id="_linhaEsco">
-            <div class="sec-ele descr">
-                <h2>Linha Escola</h2>
-                <p>A linha de soluções para a Escola possui programas e produtos elaborados para auxiliar no monitoramento e acompanhamento pedagógicos, auxiliando diretores, gestores e professores no ambiente escolar.</p>
-            </div>
-        </section>
-        <section class="side-by-side" id="_crjEsco">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="/assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png" alt="Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano..">
-                    <figcaption>Caderno do Aluno - Matemática. Acompanha o programa Coruja Escola.</figcaption>
-                </figure>
-            </div>
-            <div class="sec-ele descr">
-                <h2>Coruja Escola</h2>
-                <p>O Coruja Escola é um programa complementar, desenvolvido para oferecer avaliação digital adaptativa, monitoramento e intervenção pedagógica, para lidar com a diversidade dos alunos que compõem a sala de aula. É comercializada pela Pearson.</p>
-                <a href="/pages/Escola/index.html" class="btn-red">Saiba mais</a>
-            </div>
-        </section>
-        <section class="side-by-side" id="_cadDif">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="/assets/img/cad_dif_prof_LP.png" alt="Caderno de Diferenciação da Instrução - Professor - Língua Portuguesa.">
-                    <figcaption>Caderno de Diferenciação da Instrução.</figcaption>
-                </figure>
-            </div>
-            <div class="sec-ele descr">
-                <h2>Cadernos de Diferenciação da Instrução - Professores</h2>
-                <p>São cadernos voltados para professores do Ensino Fundamental I (alinhado com o BNCC) e introduzem os princípios da <a href="#">Diferenciação da Instrução</a> na sala de aula. Com atividades diversificadas e interdisciplinares, o professor pode atender alunos com diferentes níveis de desenvolvimento, em Língua Portuguesa e Matemática.</p>
-                <a href="/pages/Fale%2520Conosco/index.html" class="btn-red">Adquira já</a>
-        </section>
-        <section class="center black-bg" id="_linhaEspe">
-            <div class="sec-ele descr">
-                <h2>Linha Especialista</h2>
-                <p>A linha de soluções para Especialistas possui produtos para monitoramento e intervenção pedagógica, voltados para os profissionais da área da educação, como Fonoaudiólogos, Psicopedagogos, Psicólogos, Pedagogos, etc. É comercializada pela Pearson.</p>
-            </div>
-        </section>
-        <section class="side-by-side" id="_crjEspe">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="/assets/img/Aval_Coruja_kid.jpg" alt="criança realizando a Avaliação Coruja">
-                    <figcaption>Avaliação Coruja Especialista.</figcaption>
-                </figure>
-            </div>
-            <div class="sec-ele descr">
-                <h2>Coruja Especialista</h2>
-                <p>Com a Avaliação Coruja, o especialista pode investigar habilidades e competências nas áres de Língua Portuguesa e Matemática. A Avaliação também permite analisar habilidades de aprendizagem, tais como: linguagem, memória operacional, processamento da informação e cognição social. Para alunos de 1º a 3º ano do ensino fundamental. É comercializada pela Pearson.</p>
-                <a href="#" class="btn-red">Saiba mais</a>
-            </div>
-        </section>
-        <section class="side-by-side" id="_cadInter">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="/assets/img/cad_interv_ling_2017.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja">
-                    <figcaption>Caderno de Intervenção - Linguagem.</figcaption>
-                </figure>
-            </div>
-            <div class="sec-ele descr">
-                <h2>Cadernos de Intervenção</h2>
-                <p>Para auxiliar o Especialista em sua intervenção, foi desenvolvida uma série de cadernos correspondentes aos quatro eixos que compõem o <i>Domínio</i> das Habilidades de Aprendizagem: Linguagem, Memória Operacional, Processamento da Informação e Cognição Social. São mais de 200 atividades em cada caderno! Para alunos de 1º a 3º ano do ensino fundamental. É comercializada pela Pearson.</p>
-                <a href="#" class="btn-red">Saiba mais</a>
-        </section>
-        <section class="side-by-side" id="_crjPromat">
-            <div class="sec-ele showcase">
-                <figure>
-                    <img src="/assets/img/kit_promat.jpg" alt="Kit completo do Coruja Promat">
-                    <figcaption>Kit Coruja Promat, com caderno 1, caderno 2 e fichas lalala.</figcaption>
-                </figure>
-            </div>
-            <div class="sec-ele descr">
-                <h2>Coruja Promat</h2>
-                <p>É um roteiro para sondagem de habilidades matemáticas. Possui 100 tarefas que podem ser apresentadas à criança por meio de material impresso ou digital. A análise dos resultados do roteiro, permite uma intervenção dirigida às necessidade de cada criança. Para alunos de 1º a 5º ano do ensino fundamenta. É comercializada pela Pearson.l</p>
-                <a href="#" class="btn-red">Saiba mais</a>
-            </div>
-        </section>
-        <section class="center black-bg" id="_cursosSol">
-            <div class="sec-ele descr">
-                <h2>Cursos, Palestras e Formações</h2>
-                <p>Oferecemos cursos e palestras sobre questões, desde a escola até a clínica. Contamos com uma equipe multidisciplinar, com mestres e doutores, da área da educação.</p>
-                <a href="#" class="btn-red">Veja nossa agenda de cursos!</a>
-            </div>
-        </section>
-    </main>
-    <footer id="_footer">
-        <!-- load content from templates/footer/footer.html by jQuery -->
-        <!--<address>
-            <div class="contato">
-                <h3>Dúvidas?</h3>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Fale Conosco</a>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Perguntas Frequentes</a>
-                <a href="#"><i class="fa fa-link fa-lg"></i>Equipe</a>
-            </div>
-            <div class="social-medias">
-                <h3>Siga-nos</h3>
-                <a href="https://www.facebook.com/corujaedu"><i class="fa fa-facebook-official fa-lg"></i> Facebook</a>
-                <a href="https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg"><i class="fa fa-youtube-square fa-lg"></i> Youtube</a>
-                <a href="https://medium.com/coruja-educa%C3%A7%C3%A3o"><i class="fa fa-medium fa-lg"></i> Medium - Blog</a>
-            </div>
-            <div class="endereco">
-                <h3>Endereço</h3>
-                <p>Rua Dr. Virgílio de Carvalho Pinto, 433</p>
-                <p>Office 7A</p>
-                <p>Pinheiros, São Paulo - SP, CEP 05415-030 (Impact Hub)</p>
-            </div>
-        </address>
-        <div class="creditos">
-            <h3>créditos</h3>
-            <p>₢flaticon</p>
-            <p>@takagi.massao</p>
-        </div>-->
-    </footer>
-    <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
+        <
+        body >
+            <
+            header id = "_header" >
+            <!-- load content from templates/header/header.html by jQuery -->
+            <
+            /header> <
+            main id = "_solucoes" >
+            <
+            section class = "hero" >
+            <
+            h1 > Soluções Coruja < /h1> <
+            div class = "sec-ele" >
+            <
+            a class = "hero-opt"
+        href = "#_linhaEsco" >
+            <
+            img src = "/assets/img/escola.svg"
+        alt = "" >
+            <
+            figcaption > Linha Escola < /figcaption> <
+            /a> <
+            /div> <
+            div class = "sec-ele" >
+            <
+            a class = "hero-opt"
+        href = "#_linhaEspe" >
+            <
+            img src = "/assets/img/especialista.svg"
+        alt = "" >
+            <
+            figcaption > Linha Especialista < /figcaption> <
+            /a> <
+            /div> <
+            /section> <
+            section class = "center black-bg anchor"
+        id = "_linhaEsco" >
+            <
+            div class = "sec-ele descr" >
+            <
+            h2 > Linha Escola < /h2> <
+            p > A linha de soluções para a Escola possui programas e produtos elaborados para auxiliar no monitoramento e acompanhamento pedagógicos, auxiliando diretores, gestores e professores no ambiente escolar. < /p> <
+            /div> <
+            /section> <
+            section class = "side-by-side"
+        id = "_crjEsco" >
+            <
+            div class = "sec-ele showcase" >
+            <
+            figure >
+            <
+            img src = "/assets/img/MAT_ALUNO_ANO_1_SEM_1_web.png"
+        alt = "Capa do caderno do aluno de Matemática, primeiro semestre do primeiro ano.." >
+            <
+            figcaption > Caderno do Aluno - Matemática.Acompanha o programa Coruja Escola. < /figcaption> <
+                /figure> <
+                /div> <
+                div class = "sec-ele descr" >
+                <
+                h2 > Coruja Escola < /h2> <
+                p > O Coruja Escola é um programa complementar, desenvolvido para oferecer avaliação digital adaptativa, monitoramento e intervenção pedagógica, para lidar com a diversidade dos alunos que compõem a sala de aula.É comercializada pela Pearson. < /p> <
+                a href = "/pages/Escola/index.html"
+            class = "btn-red" >
+            Saiba mais < /a> <
+            /div> <
+            /section> <
+            section class = "side-by-side"
+        id = "_cadDif" >
+            <
+            div class = "sec-ele showcase" >
+            <
+            figure >
+            <
+            img src = "/assets/img/cad_dif_prof_LP.png"
+        alt = "Caderno de Diferenciação da Instrução - Professor - Língua Portuguesa." >
+            <
+            figcaption > Caderno de Diferenciação da Instrução. < /figcaption> <
+            /figure> <
+            /div> <
+            div class = "sec-ele descr" >
+            <
+            h2 > Cadernos de Diferenciação da Instrução - Professores < /h2> <
+            p > São cadernos voltados para professores do Ensino Fundamental I(alinhado com o BNCC) e introduzem os princípios da < a href = "#difInstr"
+            rel = "modal:open" >
+            Diferenciação da Instrução < /a> na sala de aula. Com atividades diversificadas e interdisciplinares, o professor pode atender alunos com diferentes níveis de desenvolvimento, em Língua Portuguesa e Matemática.</p >
+            <
+            a href = "/pages/FaleConosco/index.html"
+        class = "btn-red" > Adquira já < /a> <
+            /section> <
+            section class = "center black-bg"
+        id = "_linhaEspe" >
+            <
+            div class = "sec-ele descr" >
+            <
+            h2 > Linha Especialista < /h2> <
+            p > A linha de soluções para Especialistas possui produtos para monitoramento e intervenção pedagógica, voltados para os profissionais da área da educação, como Fonoaudiólogos, Psicopedagogos, Psicólogos, Pedagogos, etc.É comercializada pela Pearson. < /p> <
+            /div> <
+            /section> <
+            section class = "side-by-side"
+        id = "_crjEspe" >
+            <
+            div class = "sec-ele showcase" >
+            <
+            figure >
+            <
+            img src = "/assets/img/Aval_Coruja_kid.jpg"
+        alt = "criança realizando a Avaliação Coruja" >
+            <
+            figcaption > Avaliação Coruja Especialista. < /figcaption> <
+            /figure> <
+            /div> <
+            div class = "sec-ele descr" >
+            <
+            h2 > Coruja Especialista < /h2> <
+            p > Contém o acesso à plataforma Canal Coruja e a Avaliação Coruja - com ela o especialista pode investigar habilidades e competências nas áres de Língua Portuguesa e Matemática.A Avaliação também permite analisar habilidades de aprendizagem, tais como: linguagem, memória operacional, processamento da informação e cognição social.Para alunos de 1 º a 3 º ano do ensino fundamental.É comercializada pela Pearson. < /p> <
+                a href = "/pages/Especialista/index.html"
+            class = "btn-red" >
+            Saiba mais < /a> <
+            /div> <
+            /section> <
+            section class = "side-by-side"
+        id = "_cadInter" >
+            <
+            div class = "sec-ele showcase" >
+            <
+            figure >
+            <
+            img src = "/assets/img/cad_interv_ling_2017.jpg"
+        alt = "Menina no ensino fundamental fazendo a Avaliação Coruja" >
+            <
+            figcaption > Caderno de Intervenção - Linguagem. < /figcaption> <
+            /figure> <
+            /div> <
+            div class = "sec-ele descr" >
+            <
+            h2 > Cadernos de Intervenção < /h2> <
+            p > Para auxiliar o Especialista em sua intervenção, foi desenvolvida uma série de cadernos correspondentes aos quatro eixos que compõem o < i > Domínio < /i> das Habilidades de Aprendizagem: Linguagem, Memória Operacional, Processamento da Informação e Cognição Social. São mais de 200 atividades em cada caderno! Para alunos de 1º a 3º ano do ensino fundamental. É comercializada pela Pearson.</p >
+            <
+            a href = "http://www.pearsonclinical.com.br/catalogsearch/result/?q=cadernos+de+interven%C3%A7%C3%A3o"
+        class = "btn-red" > Saiba mais < /a> <
+            /section> <
+            section class = "side-by-side"
+        id = "_crjPromat" >
+            <
+            div class = "sec-ele showcase" >
+            <
+            figure >
+            <
+            img src = "/assets/img/kit_promat.jpg"
+        alt = "Kit completo do Coruja Promat" >
+            <
+            figcaption > Kit Coruja Promat - inclui Manual de Aplicação, caderno de estímulos e guia de resposta. < /figcaption> <
+            /figure> <
+            /div> <
+            div class = "sec-ele descr" >
+            <
+            h2 > Coruja Promat < /h2> <
+            p > É um roteiro para sondagem de habilidades matemáticas.Possui 100 tarefas que podem ser apresentadas à criança por meio de material impresso ou digital.A análise dos resultados do roteiro, permite uma intervenção dirigida às necessidade de cada criança.Para alunos de 1 º a 5 º ano do ensino fundamenta.É comercializada pela Pearson.l < /p> <
+                    a href = "http://www.pearsonclinical.com.br/catalogsearch/result/?q=promat"
+                class = "btn-red" >
+                Saiba mais < /a> <
+                /div> <
+                /section> <
+                section class = "center black-bg"
+            id = "_cursosSol" >
+            <
+            div class = "sec-ele descr" >
+            <
+            h2 > Cursos, Palestras e Formações < /h2> <
+            p > Oferecemos cursos e palestras sobre questões, desde a escola até a clínica.Contamos com uma equipe multidisciplinar, com mestres e doutores, da área da educação. < /p> <
+            a href = "https://medium.com/corujaedu/tagged/curso"
+        class = "btn-red" > Veja nossa página de cursos! < /a> <
+            /div> <
+            /section> <
+            /main> <
+            footer id = "_footer" >
+            <!-- load content from templates/footer/footer.html by jQuery -->
+            <!--<address>
+            <
+            div class = "contato" >
+            <
+            h3 > Dúvidas ? < /h3> <
+            a href = "#" > < i class = "fa fa-link fa-lg" > < /i>Fale Conosco</a >
+            <
+            a href = "#" > < i class = "fa fa-link fa-lg" > < /i>Perguntas Frequentes</a >
+            <
+            a href = "#" > < i class = "fa fa-link fa-lg" > < /i>Equipe</a >
+            <
+            /div> <
+            div class = "social-medias" >
+            <
+            h3 > Siga - nos < /h3> <
+            a href = "https://www.facebook.com/corujaedu" > < i class = "fa fa-facebook-official fa-lg" > < /i> Facebook</a >
+            <
+            a href = "https://www.youtube.com/channel/UCHyUf7MmvkSVWwJBMwSy5jg" > < i class = "fa fa-youtube-square fa-lg" > < /i> Youtube</a >
+            <
+            a href = "https://medium.com/coruja-educa%C3%A7%C3%A3o" > < i class = "fa fa-medium fa-lg" > < /i> Medium - Blog</a >
+            <
+            /div> <
+            div class = "endereco" >
+            <
+            h3 > Endereço < /h3> <
+            p > Rua Dr.Virgílio de Carvalho Pinto, 433 < /p> <
+            p > Office 7 A < /p> <
+            p > Pinheiros, São Paulo - SP, CEP 05415 - 030(Impact Hub) < /p> <
+            /div> <
+            /address> <
+            div class = "creditos" >
+            <
+            h3 > créditos < /h3> <
+            p > ₢flaticon < /p> <
+            p > @takagi.massao < /p> <
+            /div>--> <
+            /footer> <
+            script type = "text/javascript"
+        src = "../../templates/header/assets/js/header.js" >
+
+    </script>
     <!-- animate on scroll AOS-->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="../../assets/js/coruja_jQuery.js"></script>
     <script src="../../assets/js/anchorLinks.js"></script>
-</body>
+    </body>
 
 </html>
