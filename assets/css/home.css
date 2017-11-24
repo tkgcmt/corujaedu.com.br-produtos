@@ -25,16 +25,16 @@
     min-width: 280px;
 }
 
-.poster {
-    background: url("/assets/img/faixa-home.jpg") no-repeat center;
+#_comoFunciona .poster {
+    background: url("/assets/img/Faixa-home.jpg") no-repeat center;
     background-size: cover;
-    max-height: 60vh;
-    min-height: 60vh;
+    max-height: 40vmax;
+    min-height: 40vmax;
 }
 
 .numeros {
     width: 60vw;
-    margin: 10vh auto;
+    margin: 0 auto 10vh;
 }
 
 
