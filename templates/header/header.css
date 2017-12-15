@@ -269,6 +269,7 @@ nav {
 
 .side-nav i {
     background: rgba(255, 255, 255, 0.0);
+    padding-right: 0.3666em;
     /*    transform: rotate(90deg);*/
 }
 

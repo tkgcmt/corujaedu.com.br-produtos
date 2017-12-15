@@ -82,6 +82,40 @@
     top: -9999px;
 }
 
+.dl-rels {
+    margin-bottom: 40px;
+    text-align: left;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.descr .dl-rels ol,
+.descr .dl-rels li {
+    font-size: 16px;
+}
+
+.dl-rels > ol {
+    padding: 0 5vw;
+}
+
+ul ul,
+ol ol,
+ol ul,
+ul ol {
+    margin-left: 2em;
+}
+
+ul ul ul,
+ol ol ol,
+ol ul ul,
+ul ol ul,
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ul {
+    margin-left: 4em;
+}
+
 @media (max-width: 930px) {
     .hero img {
         object-position: bottom right;

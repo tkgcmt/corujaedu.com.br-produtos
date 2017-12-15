@@ -1,6 +1,5 @@
-@import url("../../assets/css/coruja_style.css");
 .hero {
-    background-image: url("../../assets/img/solucoes_hero.jpg");
+    background: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -105,4 +104,15 @@
     object-fit: cover;
     object-position: bottom;
     margin-top: 4em;
+}
+
+
+#_optEsco {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+#_optEspe {
+    animation-duration: 2s;
+    animation-delay: 1.5s;
 }

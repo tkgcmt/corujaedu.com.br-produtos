@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruja Educação - Coruja Escola</title>
     <!-- fontes -->
-    <link href="../../assets/fonts/bariol_regular-webfont.woff">
+    <link href="/assets/fonts/bariol_regular-webfont.woff">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&amp;subset=latin-ext" rel="stylesheet">
     <!-- Animate on Scroll aos.css -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- estilos coruja -->
-    <link rel="stylesheet" href="../../assets/css/coruja_style.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/coruja_style.css">
+    <link rel="stylesheet" href="/templates/header/header.css">
+    <link rel="stylesheet" href="/templates/footer/footer.css">
     <link rel="stylesheet" href="style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../../assets/js/coruja_jQuery.js"></script>
+    <script src="/assets/js/coruja_jQuery.js"></script>
     </script>
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
@@ -32,7 +35,7 @@
     <main id="_demo">
         <section class="hero">
             <div class="background">
-                <img alt="Crianças alegres em ambiente escolar." src="../../assets/img/Aval-hero.jpg" width="800" height="600">
+                <img alt="Crianças alegres em ambiente escolar." src="/assets/img/Aval-hero.jpg" width="800" height="600">
             </div>
             <div class="descr">
                 <h1 data-aos="zoom-out">Avaliação Coruja</h1>
@@ -45,18 +48,10 @@
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Como funciona?</h2>
                 <p>A Avaliação Coruja é uma avaliação adaptativa, criada a partir de uma árvore de decisões, e mapeia o desempenho da criança em competências e habilidades em Língua Portuguesa, Matemática <strong>ou</strong> Habilidades de Aprendizagem. O sistema gera relatórios personalizados para monitorar a evolução da aprendizagem de cada criança, turma e ano escolar determinar áreas críticas que necessitam de uma intervenção pedagógica mais intensa.</p>
+                <a href="#_demoDl" class="btn-red">Baixar Avaliação Demonstração</a>
             </div>
         </section>
-        <section id="_compareTable" class="center">
-            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
-                <h2>Comparação Coruja Especialista e Coruja Escola</h2>
-                <div id="compareNinjaTable_119654">
-                    <img src="https://www.compareninja.com/public/images/loader_small.gif" style="display: block; width: 18px; margin: 50px auto 0;" />
-                    <p style="display: none;">Created with Compare Ninja</p>
-                </div>
-            </div>
-        </section>
-        <section id="_videoAvalDemo" class="center black-bg">
+        <section id="_videoAvalDemo" class="center">
             <div class="sec-ele descr">
                 <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Veja a prova em ação</h2>
                 <p>Assista a uma breve apresentação sobre as principais características da Avaliação Coruja.</p>
@@ -67,12 +62,12 @@
         </section>
         <section id="_avalDL" class="center">
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="poster">
-                <img src="../../assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
+                <img src="/assets/img/Aval_Coruja_kid.jpg" alt="Menina no ensino fundamental fazendo a Avaliação Coruja.">
             </div>
-            <div class="sec-ele descr">
+            <div class="sec-ele descr" id="_demoDl">
                 <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Gostou? Experimente a nossa<br>Avaliação agora mesmo!</h2>
                 <p>Essa demonstração contempla as questões da área de Operações na disciplina de Matemática, para que você veja como funciona a nossa árvore de decisão.</p>
-                <a href="#" class="btn-red">Baixar Avaliação Demonstração</a>
+                <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FEvals&fileName=setup_aplicacao_coruja_Demo_v2.0.exe" class="btn-red">Baixar Avaliação Demonstração</a>
                 <div class="descr">
                     <h2 data-aos="zoom-out" data-aos-anchor-placement="center-bottom">Requisitos do Sistema para a Avaliação</h2>
                     <ul data-aos="zoom-out" data-aos-anchor-placement="center-bottom">
@@ -84,13 +79,71 @@
                         <li class="obs">* Necessário utilizar teclado e mouse (ou equivalente). </li>
                         <li class="obs">* Recomenda-se o uso de fones de ouvido. </li>
                     </ul>
+                    <a href="/pages/Solucoes/" class="btn-red">Veja nossos produtos e serviços</a>
                 </div>
+            </div>
+        </section>
+        <section id="_compareTable" class="center black-bg">
+            <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
+                <h2>Comparação Coruja Especialista e Coruja Escola</h2>
+                <div id="compareNinjaTable_119654">
+                    <img src="https://www.compareninja.com/public/images/loader_small.gif" style="display: block; width: 18px; margin: 50px auto 0;" />
+                    <p style="display: none;">Created with Compare Ninja</p>
+                </div>
+            </div>
+        </section>
+        <section id="_relaDL" class="center">
+            <div class="sec-ele descr">
+                <h2>Confira os exemplos de relatórios:</h3>
+                    <div class="dl-rels">
+                        <ol>
+                            <h3>Escola</h3>
+                            <li>Monitoramento:</li>
+                            <ol type="a">
+                                <p>Distribuição de alunos nos níveis de desempenho</p>
+                                <li>
+                                    <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=01a%20-%20Distribui%C3%A7%C3%A3o%20de%20alunos%20nos%20n%C3%ADveis%20de%20desempenho.pdf">Língua Portuguesa</a>
+                                </li>
+                                <li>
+                                    <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=01b%20-%20Distribui%C3%A7%C3%A3o%20de%20alunos%20nos%20n%C3%ADveis%20de%20desempenho.pdf">Matemática</a>
+                                </li>
+                            </ol>
+                            <li><a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=02%20-%20Evolu%C3%A7%C3%A3o%20do%20desempenho%20do%20aluno%20por%20eixo.pdf">Evolução do desempenho do aluno</a></li>
+                        </ol>
+                        <ol>
+                            <li>Turma:</li>
+                            <ol type="a">
+                                <p>Relatório Turma Ordem alfabética</p>
+                                <li>
+                                    <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=03a%20-%20Relat%C3%B3rio%20Turma%20Ordem%20alfab%C3%A9tica.pdf">Língua Portuguesa</a>
+                                </li>
+                                <li>
+                                    <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=03b%20-%20Relat%C3%B3rio%20Turma%20Ordem%20alfab%C3%A9tica.pdf">Matemática</a>
+                                </li>
+                            </ol>
+                            <ol type="a">
+                                <p>Relatório Turma por cor</p>
+                                <li>
+                                    <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=04a%20-%20Relat%C3%B3rio%20Turma%20por%20cor.pdf">Língua Portuguesa</a>
+                                </li>
+                                <li>
+                                    <a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=04b%20-%20Relat%C3%B3rio%20Turma%20por%20cor.pdf">Matemática</a>
+                                </li>
+                            </ol>
+                            <li><a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=05%20-%20Relat%C3%B3rio%20Individual.pdf">Individual</a></li>
+                        </ol>
+                        <br />
+                        <ol>
+                            <h3>Especialista</h3>
+                            <li><a href="https://canal.corujaedu.com.br/api/FileManager/DownloadFileAsync?fld=~%2FContent%2FFiles%2FHelp&fileName=05%20-%20Relat%C3%B3rio%20Individual.pdf">Individual</a></li>
+                        </ol>
+                    </div>
             </div>
         </section>
         <section id="_buy" class="center black-bg">
             <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" class="sec-ele descr">
                 <h2>Adquira já uma de nossas soluções!</h2>
-                <a href="#" class="btn-red">Acessar a loja</a>
+                <a href="/pages/Solucoes/" class="btn-red">Veja nossos produtos e serviços</a>
             </div>
         </section>
     </main>
@@ -99,7 +152,7 @@
 
     </footer>
     <!-- script para compare ninja -->
-    <script type="text/javascript" src="../../templates/header/assets/js/header.js"></script>
+    <script type="text/javascript" src="/templates/header/assets/js/header.js"></script>
     <!-- Compare Ninja - Comparison table -->
     <script type="text/javascript">
         (function() {

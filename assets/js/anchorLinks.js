@@ -35,6 +35,11 @@
                 return false;
             }
 
+            //workaround for modals
+            if (href == "#difInstr") {
+                return false;
+            }
+
             match = document.getElementById(href.slice(1));
 
             if (match) {

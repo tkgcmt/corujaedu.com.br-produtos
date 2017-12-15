@@ -26,11 +26,23 @@
 }
 
 #_comoFunciona .poster {
-    background: url("/assets/img/Faixa-home.jpg") no-repeat center;
+    background: url("/assets/img/04.jpg") no-repeat center;
     background-size: cover;
-    max-height: 40vmax;
-    min-height: 40vmax;
+    min-height: 40vh;
+    max-height: 40vh;
+    position: relative;
 }
+
+/*#_comoFunciona .poster::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+}*/
 
 .numeros {
     width: 60vw;
@@ -79,6 +91,14 @@
     .descr {
         transform: translate(0, 0);
         left: 0;
+    }
+
+    #_comoFunciona .poster {
+        background: url("/assets/img/04.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 40vmin;
+        max-height: 40vmin;
+        position: relative;
     }
 }
 

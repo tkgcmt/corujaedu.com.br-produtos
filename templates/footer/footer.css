@@ -89,16 +89,8 @@ address > div {
     align-self: center;
 }
 
-.contato a i {
-    margin: 0 8px;
-}
-
 .endereco p {
     flex: 1 1 50px;
-}
-
-.social-medias a i {
-    margin: 0 8px;
 }
 
 .social-medias a {
