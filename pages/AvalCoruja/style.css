@@ -83,10 +83,42 @@
 }
 
 .dl-rels {
+    flex-wrap: wrap;
     margin-bottom: 40px;
     text-align: left;
     width: 50vw;
     margin: 0 auto;
+}
+
+.rel-list {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.rel-list,
+.rel-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.rel-type {
+    margin-bottom: 3rem;
+}
+
+.rel-list h3,
+.rel-type p {
+    flex: 0 0 100vw;
+    margin-bottom: 1.5rem;
+}
+
+.rel-list > div {
+    flex: 1 1 1;
+}
+
+.rel-type > div {
+    flex: 0 0 270px;
 }
 
 .descr .dl-rels ol,
@@ -95,7 +127,7 @@
 }
 
 .dl-rels > ol {
-    padding: 0 5vw;
+    margin: 0 0 4em 2em;
 }
 
 ul ul,
@@ -105,14 +137,14 @@ ul ol {
     margin-left: 2em;
 }
 
-ul ul ul,
-ol ol ol,
-ol ul ul,
-ul ol ul,
-ul ul ol,
-ul ol ol,
-ol ul ol,
-ol ol ul {
+ul ul li,
+ol ol li,
+ul ul li,
+ol ul li,
+ul ol li,
+ol ol li,
+ul ol li,
+ol ul li {
     margin-left: 4em;
 }
 

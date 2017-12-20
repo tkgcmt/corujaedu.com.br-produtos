@@ -25,37 +25,13 @@ footer p {
 }
 
 footer a:hover {
-    color: wheat;
+    color: darkorange;
 }
 
 footer a,
 footer p {
     flex: 1 1 50px;
     font-size: 14px;
-}
-
-.footer-nav {
-    background-color: #e24301;
-    width: 100%;
-    padding: 40px;
-    margin-left: -40px;
-    border-top: 2px solid #444;
-    border-bottom: 2px solid #444;
-}
-
-.footer-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
-}
-
-.footer-nav li {
-    color: white;
-}
-
-.footer-nav a {
-    color: ghostwhite;
 }
 
 footer .navigation a:hover::after {
@@ -72,7 +48,7 @@ address {
 }
 
 address a:hover {
-    color: #e24301;
+    color: darkorange;
 }
 
 address > div {

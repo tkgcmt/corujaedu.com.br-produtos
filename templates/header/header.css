@@ -101,6 +101,18 @@ nav {
     visibility: visible;
 }
 
+.mobile-nav .separator,
+.mobile-nav .separator:before,
+.mobile-nav .separator:after {
+    font-family: FontAwesome;
+    content: "\f111";
+
+}
+
+.mobile-nav .separator:before {
+    transform: translate(30px);
+}
+
 .desktop-nav {
     display: none;
 }
@@ -213,13 +225,13 @@ nav {
 
 .user-info a {
     text-decoration: none;
-    color: orange;
+    color: darkorange;
     font-weight: 400;
 }
 
 .user-info a:hover {
-    font-weight: 700;
     color: darkorange;
+
 }
 
 .mobile-nav {
@@ -250,52 +262,53 @@ nav {
 }
 
 .side-nav {
-    padding: 8px 8px 8px 5px;
-    font-size: 12px;
-    border-radius: 0px 10px 10px 0px;
     position: fixed;
     top: 50%;
     left: 0;
-    color: orange;
-    background: rgba(255, 255, 255, 1);
+    color: #e24301;
     opacity: .6;
     transition: .3s;
+    font-size: 12px;
+    /* keep padding top one pixel less than it's a elements */
+    padding: 7px 8px 12px 8px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0px 0px 8px 8px;
 }
 
 .side-nav a {
+    padding: 8px 6px 12px 6px;
     text-decoration: none;
     color: #e24301;
+    width: 100%;
+    height: 100%;
 }
 
 .side-nav i {
     background: rgba(255, 255, 255, 0.0);
     padding-right: 0.3666em;
-    /*    transform: rotate(90deg);*/
 }
 
 .side-nav:hover {
     opacity: 1;
-    background: rgba(255, 255, 255, 0.8);
     transition: .3s;
 }
 
 .show-on-hover {
     color: #e24301;
-    display: none;
+    display: inline;
     transition: .3s;
     margin: 1em;
 }
 
-.side-nav:hover .show-on-hover,
-.side-nav:hover a {
-    display: inline;
-    color: #333;
-    transition: .3s;
-}
-
 @media (max-width: 480px) {}
 
-@media (min-width: 481px) and (max-width: 930px) {}
+@media (min-width: 481px) and (max-width: 930px) {
+    .side-nav {
+        font-size: 14px;
+    }
+}
 
 @media (min-width: 931px) {
     .desktop-nav {
@@ -324,8 +337,29 @@ nav {
         display: block;
     }
     .side-nav {
-        padding: 10px;
         font-size: 16px;
-        border-radius: 0px 13px 13px 0px;
+        padding: 10px;
+        /* keep padding left one pixel less than it's a elements */
+        padding: 7px 6px 12px 6px;
+        border-radius: 0 13px 13px 0;
+        transform: rotate(0);
+    }
+
+    .side-nav a {
+        padding: 8px 6px 12px 6px;
+    }
+
+    .show-on-hover {
+        color: #e24301;
+        display: none;
+        transition: .3s;
+        margin: 1em;
+    }
+
+    .side-nav:hover .show-on-hover,
+    .side-nav:hover a {
+        display: inline;
+        color: #333;
+        transition: .3s;
     }
 }
